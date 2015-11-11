@@ -62,3 +62,6 @@ media
 
 # Fixture generated data
 shop/fixtures/sample-images/
+
+# BD
+db.sqlite3
