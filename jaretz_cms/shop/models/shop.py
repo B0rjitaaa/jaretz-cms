@@ -58,12 +58,12 @@ class Shop(models.Model):
         blank=True,
         null=True
     )
-    terms_use_privacy = fields.RedactorField(
+    terms_use_privacy = models.TextField(
         _('terms of use and privacy'),
         blank=True,
         null=True
     )
-    return_policy = fields.RedactorField(
+    return_policy = models.TextField(
         _('return policy'),
         blank=True,
         null=True

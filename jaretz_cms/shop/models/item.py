@@ -1,9 +1,13 @@
 from hashlib import sha1
 import os
 from uuid import uuid4
+from decimal import Decimal, ROUND_HALF_UP
 
+from django.core.validators import MinValueValidator
 from django.core.validators import RegexValidator
+
 from django.db import models
+
 from django.utils.translation import ugettext_lazy as _
 
 def upload_to(instance, filename):
@@ -14,24 +18,15 @@ def upload_to(instance, filename):
     # return the whole path to the file
     return os.path.join('images/items', filename)
 
+
 class Item(models.Model):
-	reference_code = models.CharField(
-        _('reference code'),
+    reference_code = models.CharField(
+        _('reference_code'),
         max_length=100
     )
-	name = models.CharField(
-		_('name'),
-		max_length=150
-	)
-	detailed_description = models.TextField(
-        _('detailed description'),
-        null=True,
-        blank=True
-    )
-    short_description = models.TextField(
-        _('short description'),
-        null=True,
-        blank=True
+    name = models.CharField(
+        _('name'),
+        max_length=150
     )
     starred = models.BooleanField(
         _('starred'),
