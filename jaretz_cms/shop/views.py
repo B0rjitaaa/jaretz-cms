@@ -1,5 +1,6 @@
 from django.shortcuts import render
 
+from shop.models import Item
 
 def index(request):
 	'''
@@ -9,7 +10,11 @@ def index(request):
 		- Categories.
 		- Items.
 	'''
-	return render(request, 'index.html', {})
+	popular_items = Item.objects.order_by('shown_times')
+	response = {
+		'popular_items': popular_items
+	}
+	return render(request, 'index.html', response)
 
 
 def item(request, id_item):

@@ -6,6 +6,8 @@ from decimal import Decimal, ROUND_HALF_UP
 from django.core.validators import MinValueValidator
 from django.core.validators import RegexValidator
 
+from django.template import defaultfilters
+
 from django.db import models
 
 from django.utils.translation import ugettext_lazy as _
