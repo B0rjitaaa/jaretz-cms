@@ -9,7 +9,7 @@ def index(request):
 		- Categories.
 		- Items.
 	'''
-	pass
+	return render(request, 'base.html', {})
 
 
 def item(request, id_item):
