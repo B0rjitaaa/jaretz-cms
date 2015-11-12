@@ -17,7 +17,7 @@ def item(request, id_item):
 
 
 def items(request):
-	pass
+	return render(request, 'item.html', {})
 
 
 def category(request, id_category):
