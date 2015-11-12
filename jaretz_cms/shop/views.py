@@ -10,9 +10,15 @@ def index(request):
 		- Categories.
 		- Items.
 	'''
-	popular_items = Item.objects.order_by('shown_times')
+	recent_items = Item.objects.order_by('-upload_date')[:12]
+	featured_items = Item.objects.filter(starred=True)[:12]
+	popular_items = Item.objects.order_by('shown_times')[:12]
+
 	response = {
+		'recent_items': recent_items,
+		'featured_items': featured_items,
 		'popular_items': popular_items
+
 	}
 	return render(request, 'index.html', response)
 
