@@ -259,14 +259,14 @@ display:inline-block;
 	text-decoration: none;
 	height: 72px;
 	width: 38px;
-	background: transparent url("../images/sp.png") no-repeat -19px -7px;
+	background: transparent url('../../media/images/assets/') no-repeat -19px -7px;
 }
 .callbacks_nav:active {
 	opacity: 1.0;
 }
 .callbacks_nav.next {
 	left: auto;
-	background: transparent url("../images/sp.png") no-repeat -77px -7px;
+	background: transparent url('../../media/images/assets/') no-repeat -77px -7px;
 	right:0;
 }
 /*----*/
@@ -2426,11 +2426,11 @@ input.item_add.items {
     left: 0px;
     height: 72px;
     width: 22px;
-    background: transparent url("../images/sp.png") no-repeat -13px -6px;
+    background: transparent url('../../media/images/assets/') no-repeat -13px -6px;
     background-size: 84px;
 }
 .callbacks_nav.next {
-    background: transparent url("../images/sp.png") no-repeat -44px -4px;
+    background: transparent url('../../media/images/assets/') no-repeat -44px -4px;
     background-size: 88px;
 }
 .subscribe form {
