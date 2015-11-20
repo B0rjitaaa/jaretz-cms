@@ -1,6 +1,6 @@
 from django.shortcuts import render
 
-from shop.models import Item, Banner
+from shop.models import Item, Banner, Shop
 
 def index(request):
 	'''
@@ -20,6 +20,7 @@ def index(request):
 		'featured_items': featured_items,
 		'popular_items': popular_items,
 		'banners': banners,
+		'shop_info': Shop.objects.all()[0]
 
 	}
 	return render(request, 'index.html', response)
