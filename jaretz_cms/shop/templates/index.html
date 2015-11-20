@@ -78,6 +78,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							</div>
 						</div>
 					</li>
+
+					{% comment %}
 					<li class="grid"><a href="#">Accessories</a>
 						<div class="mepanel">
 							<div class="row">
@@ -121,8 +123,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							</div>
 						</div>
 					</li>
+					
 					<li class="grid"><a href="typo.html">Typo</a></li>
-					<li class="grid"><a href="contact.html">Contact</a></li>					
+					{% endcomment %}
+					<li class="grid"><a href="{% url 'contact' %}">Contacto</a></li>					
 				</ul>				
 			 </div>
 			 <!---->
@@ -330,7 +334,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!---->
 <div class="subscribe">
 	 <div class="container">
-		 <h3>Newsletter</h3>
+		 <h3>Boletín de noticias</h3>
 		 <form>
 			 <input type="text" class="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}">
 			 <input type="submit" value="Subscribe">

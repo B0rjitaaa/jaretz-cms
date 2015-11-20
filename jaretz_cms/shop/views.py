@@ -40,3 +40,10 @@ def category(request, id_category):
 
 def categories(request):
 	pass
+
+
+def contact(request):
+	response = {
+		'shop_info': Shop.objects.all()[0]
+	}
+	return render (request, 'contact.html', response)

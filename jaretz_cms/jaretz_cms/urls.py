@@ -13,4 +13,5 @@ urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
     url(r'^$', 'shop.views.index', name='index'),
     url(r'^items/$', 'shop.views.items', name='items'),
+    url(r'^contact/$', 'shop.views.contact', name='contact'),
 )+static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -4,43 +4,38 @@ Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 -->
+{% load static %}
+
 <!DOCTYPE html>
 <html>
 <head>
-<title>Lighting A Ecommerce Category Flat Bootstarp Resposive Website Template | Contact :: w3layouts</title>
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<title>{{shop_info.name}}</title>
 <link href="css/docs.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
 <!-- Custom Theme files -->
 <!--theme style-->
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	
-<script src="js/jquery.min.js"></script>
+<link href="{% static 'css/style.css' %}" rel="stylesheet" media="all">	
+<link href="{%static 'css/memenu.css' %}" rel="stylesheet" type="text/css" media="all" />
 
 <!--//theme style-->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Wedding Store Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-<!-- start menu -->
-<script src="js/simpleCart.min.js"> </script>
-<!-- start menu -->
-<link href="css/memenu.css" rel="stylesheet" type="text/css" media="all" />
-<script type="text/javascript" src="js/memenu.js"></script>
-<script>$(document).ready(function(){$(".memenu").memenu();});</script>	
-<!-- /start menu -->
-</head>
-<body>
-<!--header-->	
+
 <div class="header-top">
 	 <div class="header-bottom">			
 				<div class="logo">
-					<h1><a href="index.html">Lighting</a></h1>
-					
+					<h1><a href="index.html">{{shop_info.name}}</a></h1>					
 				</div>
 			 <!---->		 
 			 <div class="top-nav">
-				<ul class="memenu skyblue"><li><a href="index.html">Home</a></li>
-					<li class="grid"><a href="#">Products</a>
+				<ul class="memenu skyblue"><li class="active"><a href="index.html">Inicio</a></li>
+					<li class="grid"><a href="#">Productos</a>
 						<div class="mepanel">
 							<div class="row">
 								<div class="col1 me-one">
@@ -83,6 +78,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							</div>
 						</div>
 					</li>
+
+					{% comment %}
 					<li class="grid"><a href="#">Accessories</a>
 						<div class="mepanel">
 							<div class="row">
@@ -120,31 +117,35 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										<li><a href="product.html">Jaguar</a></li>
 										<li><a href="product.html">Ave</a></li>
 										<li><a href="product.html">Gold Medal</a></li>
-										<li><a href="product.html">Anchor</a></li>
+										<li><a href="product.html">Anchor</a></li>										
 									</ul>	
 								</div>
 							</div>
 						</div>
 					</li>
+					
 					<li class="grid"><a href="typo.html">Typo</a></li>
-					<li class="active"><a href="contact.html">Contact</a></li>
-				</ul>
-				<div class="clearfix"> </div>
+					{% endcomment %}
+					<li class="grid"><a href="{% url 'contact' %}">Contacto</a></li>					
+				</ul>				
 			 </div>
 			 <!---->
-			 <div class="cart box_1">
-				 <a href="checkout.html">
-					<div class="total">
-					<span class="simpleCart_total"></span> (<span id="simpleCart_quantity" class="simpleCart_quantity"></span>)</div>
-					<span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
-				</a>
-				<p><a href="javascript:;" class="simpleCart_empty">Empty Cart</a></p>
-			 	<div class="clearfix"> </div>
-			 </div>
-			 <div class="clearfix"> </div>
-			 <!---->			 
-			 </div>
-			<div class="clearfix"> </div>
+			 {% comment %}
+			 	
+			 			 <div class="cart box_1">
+			 				 <a href="checkout.html">
+			 					<div class="total">
+			 					<span class="simpleCart_total"></span> (<span id="simpleCart_quantity" class="simpleCart_quantity"></span>)</div>
+			 					<span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+			 				</a>
+			 				<p><a href="javascript:;" class="simpleCart_empty">Empty Cart</a></p>
+			 			 	<div class="clearfix"> </div>
+			 			 </div>
+			 			 <div class="clearfix"> </div>
+			 			 <!---->			 
+			 			 </div>
+			 {% endcomment %}
+			 			<div class="clearfix"> </div>
 </div>
 <!---->
 <div class="contact">
@@ -154,7 +155,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		  <li class="active">Contact</li>
 		 </ol>
 			<!--start contact-->
-			<h3>Contact Us</h3>
+			<h3>Contacto</h3>
 		  <div class="section group">				
 				<div class="col-md-6 span_1_of_3">
 					<div class="contact_info">
@@ -164,13 +165,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					   		</div>
       				</div>
       			<div class="company_address">
-				     	<h4>Company Information :</h4>
-						    	<p>500 Lorem Ipsum Dolor Sit,</p>
-						   		<p>22-56-2-9 Sit Amet, Lorem,</p>
-						   		<p>USA</p>
-				   		<p>Phone:(00) 222 666 444</p>
-				   		<p>Fax: (000) 000 00 00 0</p>
-				 	 	<p>Email: <a href="mailto:info@example.com">info@mycompany.com</a></p>
+				     	<h4>Información :</h4>
+						    	<p>{{shop_info.name}},</p>
+						   		<p>{{shop_info.address}},</p>
+						   		<p>{{shop_info.city}}</p>
+				   		<p>Telf:(+34) {{shop_info.phone}}</p>
+				 	 	<p>Email: <a href="mailto:info@antiques-salvador.com">{{shop_info.email}}</a></p>
 				   		<p>Follow on: <a href="#">Facebook</a>, <a href="#">Twitter</a></p>
 				   </div>
 				</div>				
@@ -178,19 +178,21 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				  <div class="contact-form">
 					    <form>
 					    	<div>
-						    	<span><label>NAME</label></span>
+						    	<span><label>Nombre</label></span>
 						    	<span><input name="userName" type="text" class="textbox"></span>
 						    </div>
 						    <div>
-						    	<span><label>E-MAIL</label></span>
+						    	<span><label>E-mail</label></span>
 						    	<span><input name="userEmail" type="text" class="textbox"></span>
 						    </div>
+						    {% comment %}
+						    	<div>
+						    						     	<span><label>MOBILE</label></span>
+						    						    	<span><input name="userPhone" type="text" class="textbox"></span>
+						    						    </div>
+						    {% endcomment %}
 						    <div>
-						     	<span><label>MOBILE</label></span>
-						    	<span><input name="userPhone" type="text" class="textbox"></span>
-						    </div>
-						    <div>
-						    	<span><label>SUBJECT</label></span>
+						    	<span><label>Mensaje</label></span>
 						    	<span><textarea name="userMsg"> </textarea></span>
 						    </div>
 						   <div>
@@ -206,7 +208,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!---->
 <div class="subscribe">
 	 <div class="container">
-		 <h3>Newsletter</h3>
+		 <h3>Boletín de noticias</h3>
 		 <form>
 			 <input type="text" class="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}">
 			 <input type="submit" value="Subscribe">
@@ -271,5 +273,34 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	 </div>
 </div>
 <!---->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="{% static 'js/bootstrap.js' %}"> </script>
+<script src="{% static 'js/simpleCart.min.js' %}"> </script>
+<script type="text/javascript" src="{% static 'js/memenu.js' %}"></script>
+<script src="{% static 'js/responsiveslides.min.js' %}"></script>
+
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- start menu -->
+<!-- start menu -->
+
+<script>$(document).ready(function(){$(".memenu").memenu();});</script>	
+<!-- /start menu -->
+</head>
+<body> 
+<!--header-->	
+
+<script>  
+    $(function () {
+      $("#slider").responsiveSlides({
+      	auto: true,
+      	nav: true,
+      	speed: 500,
+        namespace: "callbacks",
+        pager: false,
+      });
+    });
+  </script>
+
 </body>
 </html>
