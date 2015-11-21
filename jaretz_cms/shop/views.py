@@ -31,7 +31,7 @@ def item(request, id_item):
 
 
 def items(request):
-	return render(request, 'item.html', {})
+	return render(request, 'product.html', {})
 
 
 def category(request, id_category):
