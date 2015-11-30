@@ -29,7 +29,7 @@ class Banner(models.Model):
     )
 
 
-    class Meta():
+    class Meta:
         verbose_name = 'banner'
         verbose_name_plural = 'banners'
 
