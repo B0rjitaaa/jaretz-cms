@@ -54,7 +54,7 @@ class Offer(models.Model):
 	class Meta:
 		verbose_name='Offer'
 
-	def __str__(sel):
-		pass
+	def __str__(self):
+		return self.name
 
     

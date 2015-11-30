@@ -401,7 +401,7 @@ span.disc {
 	float:left;
 	width:60%;
 	padding-top: 23px;
-	margin-right: 5em;
+	/*margin-right: 5em;*/
 }
 .ofr-pic-info h4,.ofr-pic-info  span{
 	text-align:right;
@@ -412,18 +412,18 @@ span.disc {
 }
 .ofr-pic-info2 h4{
 	color:#333;
-	font-size:1.6em;
+	font-size: 1.4em;
 }
 .ofr-pic-info  span{
 	display:block;
-	font-size:2.2em;
+	font-size:2em;
 	font-family: 'Dosis-Medium';
 	color:#ed645c;
 	margin-top:0.5em;
 }
 .ofr-pic-info2  span{
 	display:block;
-	font-size:1.5em;
+	font-size:2em;
 	font-family: 'Dosis-Medium';
 	color:#ed645c;
 	margin-top:0.5em;
@@ -436,7 +436,7 @@ span.disc {
 	background:#000;
 	color:#fff;
 	padding:0.5em 1.2em;
-	margin-top:2em;
+	margin-top:2.2em;
 	text-transform:uppercase;
 	float:right;
 	transition: 0.5s all;
@@ -2208,10 +2208,10 @@ span.item_price {
 }
 .ofr-pic-info2 h4 {
     color: #333;
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 .ofr-pic-info2 span {
-    font-size: 1.3em;
+    font-size: 2em;
 }
 .ofr-pic-info2 h5 {
     font-size: 1.6em;
