@@ -42,7 +42,15 @@ class Category(models.Model):
         max_length=1000,
         null=True,
         blank=True
-  )
+    )
+    parent_category = models.ForeignKey(
+        'Category',
+        related_name='parent',
+        related_query_name='parent',
+        verbose_name=_('parent category'),
+        blank=True,
+        null=True
+    )
     meta_tag = models.CharField(
         _('meta tag'),
         max_length=500,
