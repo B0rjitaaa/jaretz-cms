@@ -24,9 +24,9 @@ body {
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 
-/* Carousel base class */
+/* Carousel base class
 .carousel {
-  margin-bottom: 60px;
+  margin-bottom: 600px;
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {

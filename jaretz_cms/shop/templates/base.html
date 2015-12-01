@@ -41,159 +41,30 @@
             <li class="grid"><a href="#">Productos</a>
               <div class="mepanel">
                 <div class="row">
+                  {% for category in categories %}
                   <div class="col1 me-one">
-                    <h4>Shop</h4>
+                    <h4>{{category.name}}</h4>
                     <ul>
-                      <li><a href="product.html">New Arrivals</a></li>
-                      <li><a href="product.html">Home</a></li>
-                      <li><a href="product.html">Decorates</a></li>
-                      <li><a href="product.html">Accessories</a></li>
-                      <li><a href="product.html">Kids</a></li>
-                      <li><a href="product.html">Login</a></li>
-                      <li><a href="product.html">Brands</a></li>
-                      <li><a href="product.html">My Shopping Bag</a></li>
+                      {% for cat in category.subcategories %}
+                      <li><a href="{% url 'index' %}">{{cat.name}}</a></li>
+                      {% endfor %}
                     </ul>
                   </div>
-                  <div class="col1 me-one">
-                    <h4>Type</h4>
-                    <ul>
-                      <li><a href="product.html">Diwali Lights</a></li>
-                      <li><a href="product.html">Tube Lights</a></li>
-                      <li><a href="product.html">Bulbs</a></li>
-                      <li><a href="product.html">Ceiling Lights</a></li>
-                      <li><a href="product.html">Accessories</a></li>
-                      <li><a href="product.html">Lanterns</a></li>
-                    </ul> 
-                  </div>
-                  <div class="col1 me-one">
-                    <h4>Popular Brands</h4>
-                    <ul>
-                      <li><a href="product.html">Everyday</a></li>
-                      <li><a href="product.html">Philips</a></li>
-                      <li><a href="product.html">Havells</a></li>
-                      <li><a href="product.html">Wipro</a></li>
-                      <li><a href="product.html">Jaguar</a></li>
-                      <li><a href="product.html">Ave</a></li>
-                      <li><a href="product.html">Gold Medal</a></li>
-                      <li><a href="product.html">Anchor</a></li>
-                    </ul> 
-                  </div>
+                  {% endfor %}
                 </div>
               </div>
             </li>
 
-            {% comment %}
-            <li class="grid"><a href="#">Accessories</a>
-              <div class="mepanel">
-                <div class="row">
-                  <div class="col1 me-one">
-                    <h4>Shop</h4>
-                    <ul>
-                      <li><a href="product.html">New Arrivals</a></li>
-                      <li><a href="product.html">Home</a></li>
-                      <li><a href="product.html">Decorates</a></li>
-                      <li><a href="product.html">Accessories</a></li>
-                      <li><a href="product.html">Kids</a></li>
-                      <li><a href="product.html">Login</a></li>
-                      <li><a href="product.html">Brands</a></li>
-                      <li><a href="product.html">My Shopping Bag</a></li>
-                    </ul>
-                  </div>
-                  <div class="col1 me-one">
-                    <h4>Type</h4>
-                    <ul>
-                      <li><a href="product.html">Diwali Lights</a></li>
-                      <li><a href="product.html">Tube Lights</a></li>
-                      <li><a href="product.html">Bulbs</a></li>
-                      <li><a href="product.html">Ceiling Lights</a></li>
-                      <li><a href="product.html">Accessories</a></li>
-                      <li><a href="product.html">Lanterns</a></li>
-                    </ul> 
-                  </div>
-                  <div class="col1 me-one">
-                    <h4>Popular Brands</h4>
-                    <ul>
-                      <li><a href="product.html">Everyday</a></li>
-                      <li><a href="product.html">Philips</a></li>
-                      <li><a href="product.html">Havells</a></li>
-                      <li><a href="product.html">Wipro</a></li>
-                      <li><a href="product.html">Jaguar</a></li>
-                      <li><a href="product.html">Ave</a></li>
-                      <li><a href="product.html">Gold Medal</a></li>
-                      <li><a href="product.html">Anchor</a></li>                    
-                    </ul> 
-                  </div>
-                </div>
-              </div>
-            </li>
-            
-            <li class="grid"><a href="typo.html">Typo</a></li>
-            {% endcomment %}
             <li class="grid"><a href="{% url 'contact' %}">Contacto</a></li>          
           </ul>       
          </div>
-         <!---->
-         {% comment %}
-          
-               <div class="cart box_1">
-                 <a href="checkout.html">
-                  <div class="total">
-                  <span class="simpleCart_total"></span> (<span id="simpleCart_quantity" class="simpleCart_quantity"></span>)</div>
-                  <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
-                </a>
-                <p><a href="javascript:;" class="simpleCart_empty">Empty Cart</a></p>
-                <div class="clearfix"> </div>
-               </div>
-               <div class="clearfix"> </div>
-               <!---->       
-               </div>
-         {% endcomment %}
         <div class="clearfix"> </div>
       </div>
     </div>
   {% endblock nav_bar %}
-    
+  
   {% block banners %}
-    <div id="myCarousel" class="carousel slide">
-      <div class="carousel-inner">
-        {% for banner in banners %}
-          {% if forloop.first %}
-            <div class="item active">
-              <img src="{{banner.image.url}}" style="width:100%" class="img-responsive">
-              <div class="container">
-                <div class="carousel-caption">
-                  <h1>Bootstrap 3 Carousel Layout</h1>
-                  <p></p>
-                  <p><a class="btn btn-lg btn-primary" href="http://getbootstrap.com">Learn More</a>
-                </p>
-                </div>
-              </div>
-            </div>
-          {% else %}  
-            <div class="item">
-              <img src="{{banner.image.url}}" class="img-responsive">
-              <div class="container">
-                <div class="carousel-caption">
-                  <h1>Changes to the Grid</h1>
-                  <p>Bootstrap 3 still features a 12-column grid, but many of the CSS class names have completely changed.</p>
-                  <p><a class="btn btn-large btn-primary" href="#">Learn more</a></p>
-                </div>
-              </div>
-            </div>
-          {% endif %}
-        {% endfor %}
-      </div>
-      <!-- Controls -->
-      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-        <span class="icon-prev"></span>
-      </a>
-      <a class="right carousel-control" href="#myCarousel" data-slide="next">
-        <span class="icon-next"></span>
-      </a>  
-</div>
-<!-- /.carousel -->
-
-
+    
   {% endblock banners %}
 
   {% block main %}

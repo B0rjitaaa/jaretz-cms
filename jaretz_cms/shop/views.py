@@ -1,6 +1,6 @@
 from django.shortcuts import render
 
-from shop.models import Item, Banner, Shop, Offer
+from shop.models import Item, Banner, Shop, Offer, Category
 
 def index(request):
 	'''
@@ -16,6 +16,7 @@ def index(request):
 	banners = Banner.objects.all()
 
 	response = {
+		'categories': Category.objects.all().filter(parent_category=None),
 		'recent_items': recent_items,
 		'featured_items': featured_items,
 		'popular_items': popular_items,

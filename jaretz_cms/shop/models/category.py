@@ -69,6 +69,10 @@ class Category(models.Model):
                     return i.main_image
         return None
 
+    @property
+    def subcategories(self):
+        return Category.objects.filter(parent_category=self.id)
+    
     class Meta:
         verbose_name = _('category')
         verbose_name_plural = _('categories')
