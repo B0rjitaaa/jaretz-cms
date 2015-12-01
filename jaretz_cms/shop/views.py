@@ -33,7 +33,11 @@ def item(request, id_item):
 
 
 def items(request):
-	return render(request, 'product.html', {})
+	response = {
+		'shop_info': Shop.objects.all()[0],
+		'categories': Category.objects.all().filter(parent_category=None)
+	}
+	return render(request, 'product.html', response)
 
 
 def category(request, id_category):
@@ -41,7 +45,11 @@ def category(request, id_category):
 
 
 def categories(request):
-	pass
+	response = {
+		'shop_info': Shop.objects.all()[0],
+		'categories': Category.objects.all().filter(parent_category=None)
+	}
+	return render(request, 'categories.html', response)
 
 
 def contact(request):

@@ -33,12 +33,12 @@
     <div class="header-top">
       <div class="header-bottom">     
         <div class="logo">
-          <h1><a href="index.html">{{shop_info.name}}</a></h1>          
+          <h1><a href="{% url 'index' %}">{{shop_info.name}}</a></h1>          
         </div>
          <!---->     
          <div class="top-nav">
           <ul class="memenu skyblue"><li class="active"><a href="{% url 'index' %}">Inicio</a></li>
-            <li class="grid"><a href="#">Productos</a>
+            <li class="grid"><a href="{% url 'categories' %}">Productos</a>
               <div class="mepanel">
                 <div class="row">
                   {% for category in categories %}
