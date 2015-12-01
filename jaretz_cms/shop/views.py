@@ -28,8 +28,12 @@ def index(request):
 	return render(request, 'index.html', response)
 
 
-def item(request, id_item):
-	pass
+def item(request):
+	response = {
+		'shop_info': Shop.objects.all()[0],
+		'items': Item.objects.all()
+	}
+	return render (request, 'item.html', response)
 
 
 def items(request):
