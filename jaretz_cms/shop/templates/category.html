@@ -13,48 +13,76 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<div class="row">
 				<ol class="breadcrumb">
 					<li><a href="{% url 'index' %}">Inicio</a></li>
-					<li class="active">Productos</li>
+					<li><a href="{% url 'categories' %}">Categorías</a></li>
+					<li class="active">{{category.name}}</li>
 				</ol>
 			</div>
-			<h2>Nuestros productos</h2>
-			<div class="col-md-3">
-				<section  class="sky-form">
-						<div class="product_right">
-							<h4 class="m_2"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span>Categorías</h4>
-							{% for category in categories %}
-								<div class="tab">
-									<ul class="place">								
-										<li class="sort">{{category.name}}</li>
-										<div class="clearfix"> </div>
-									</ul>
-									{% if category.subcategories %}
-										{% for cat in category.subcategories %}
-											<div class="single-bottom">						
-													<a href="#"><p>{{cat.name}}</p></a>
-										    </div>
-										{% endfor %}
-									{% endif %}
-							    </div>
-							{% endfor %}
-						</div>					 
-				</section>
-			</div>			
-			<div class="product-model-sec col-md-9">
-	         {% for category in categories.all %}
-	           <div class="feature-grid col-md-4">
-	             <a href="product.html"><img src="/media/{{category.thumbnail}}" height="150px" alt=""/> 
-	               <div class="arrival-info" style="text-align:center"> 
-	                 <h4>{{item.category}}</h4>
-	                 <p style="margin-top:10px">{{category.name}}</p>
-	               </div>
-	               <div class="viw" style="text-align:center">
-	                <a href="product.html"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>Detalles</a>
-	               </div>
-	              </a>
-	           </div>
-	         {% endfor %}
-	         <div class="clearfix"></div>
-			</div>
+			<h2>{{category.name}}</h2>
+			{% if category.subcategories  %}
+				<div class="col-md-3">
+					<section  class="sky-form">
+							<div class="product_right">
+								<h4 class="m_2"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span>Subcategorías</h4>
+								{% for category in category.subcategories %}
+									<div class="tab">
+										<ul class="place">								
+											<li class="sort">{{category.name}}</li>
+											<div class="clearfix"> </div>
+										</ul>
+										{% if category.subcategories %}
+											{% for cat in category.subcategories %}
+												<div class="single-bottom">						
+														<a href="#"><p>{{cat.name}}</p></a>
+											    </div>
+											{% endfor %}
+										{% endif %}
+								    </div>
+								{% endfor %}
+							</div>					 
+					</section>
+				</div>
+				<div class="product-model-sec col-md-9">
+		         {% for category in category.subcategories %}
+		           <div class="feature-grid col-md-4">
+		             <a href="{% url 'category' category.slug category.id %}"><img src="/media/{{category.thumbnail}}" height="150px" alt=""/> 
+		               <div class="arrival-info" style="text-align:center"> 
+		                 <h4>{{item.category}}</h4>
+		                 <p style="margin-top:10px">{{category.name}}</p>
+		               </div>
+		               <div class="viw" style="text-align:center">
+		                <a href="{% url 'category' category.slug category.id %}"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>Detalles</a>
+		               </div>
+		              </a>
+		           </div>
+		         {% endfor %}
+		         <div class="clearfix"></div>
+				</div>
+			{% else %}
+				<div class="items">
+				    <div class="container">
+			       		<div class="items-sec">
+				        	{% for item in category.items.all %}
+				           		<div class="col-md-3 feature-grid">
+				             		<a href="product.html">
+					              		<div style="height:200px; margin:10px" >
+					             			<img src="{{item.image.url}}" alt=""/> 
+					             		</div>
+					               		<div class="arrival-info" style="text-align:center">
+						                	<h4>{{item.category}}</h4>
+						                 	<p>{{item.name}}</p>
+						                 	<p style="color:green">{{item.price}}€</p>
+					               		</div>
+						               	<div class="viw" style="text-align:center">
+						                	<a href="product.html"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>Detalles</a>
+						               </div>
+				              		</a>
+				           		</div>
+				         	{% endfor %}
+				         <div class="clearfix"></div>
+				       </div>
+				     </div>
+				</div>
+			{% endif %}			
 		</div>
 	</div>
 {% endblock main %}
