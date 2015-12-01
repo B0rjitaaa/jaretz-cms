@@ -13,5 +13,6 @@ urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
     url(r'^$', 'shop.views.index', name='index'),
     url(r'^categories/$', 'shop.views.categories', name='categories'),
+    url(r'^category/(?P<category_slug>[-\w]+)/(?P<category_id>\d+)/$', 'shop.views.category', name='category'),
     url(r'^contact/$', 'shop.views.contact', name='contact'),
 )+static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

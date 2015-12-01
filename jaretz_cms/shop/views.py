@@ -40,8 +40,12 @@ def items(request):
 	return render(request, 'product.html', response)
 
 
-def category(request, id_category):
-	pass
+def category(request, category_slug, category_id):
+	response = {
+		'shop_info': Shop.objects.all()[0],
+		'category': Category.objects.get(pk=category_id)
+	}
+	return render(request, 'category.html', response)
 
 
 def categories(request):
