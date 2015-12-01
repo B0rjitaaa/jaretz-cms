@@ -46,6 +46,7 @@ def categories(request):
 
 def contact(request):
 	response = {
-		'shop_info': Shop.objects.all()[0]
+		'shop_info': Shop.objects.all()[0],
+		'categories': Category.objects.all().filter(parent_category=None)
 	}
 	return render (request, 'contact.html', response)
