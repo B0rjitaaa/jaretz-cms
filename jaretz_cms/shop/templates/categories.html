@@ -16,57 +16,45 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<li class="active">Productos</li>
 				</ol>
 			</div>
-			<h2>Nuestros prodcutos</h2>
+			<h2>Nuestros productos</h2>
 			<div class="col-md-3">
 				<section  class="sky-form">
 						<div class="product_right">
-							<h4 class="m_2"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span>Categories</h4>
-							
-							<div class="tab1">
-								<ul class="place">								
-									<li class="sort">Home Decorates</li>
-									<li class="by"><img src="images/do.png" alt=""></li>
-									<div class="clearfix"> </div>
-								</ul>
-								<div class="single-bottom">						
-										<a href="#"><p>Lanterns</p></a>
-										<a href="#"><p>Wall Lamps</p></a>
-										<a href="#"><p>Table Lamps</p></a>
-										<a href="#"><p>Selling Lamps</p></a>
+							<h4 class="m_2"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span>Categorías</h4>
+							{% for category in categories %}
+								<div class="tab">
+									<ul class="place">								
+										<li class="sort">{{category.name}}</li>
+										<div class="clearfix"> </div>
+									</ul>
+									{% if category.subcategories %}
+										{% for cat in category.subcategories %}
+											<div class="single-bottom">						
+													<a href="#"><p>{{cat.name}}</p></a>
+										    </div>
+										{% endfor %}
+									{% endif %}
 							    </div>
-						    </div>
-
-							<div class="tab2">
-								<ul class="place">								
-									<li class="sort">Festive Needs</li>
-									<li class="by"><img src="images/do.png" alt=""></li>
-									<div class="clearfix"> </div>
-								</ul>
-								<div class="single-bottom">						
-									<a href="#"><p>Lanterns</p></a>
-									<a href="#"><p>Disco Lights</p></a>									
-							  	</div>
-						    </div>
+							{% endfor %}
 						</div>					 
 				</section>
 			</div>			
 			<div class="product-model-sec col-md-9">
-			         {% for category in categories.all %}
-			           <div class="feature-grid col-md-4">
-			             <a href="product.html"><img src="/media/{{category.thumbnail}}" height="150px" alt=""/> 
-			               <div class="arrival-info" style="text-align:center"> 
-			                 <h4>{{item.category}}</h4>
-			                 <p style="margin-top:10px">{{category.name}}</p>
-			               </div>
-			               <div class="viw" style="text-align:center">
-			                <a href="product.html"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>Detalles</a>
-			               </div>
-			              </a>
-			           </div>
-			         {% endfor %}
-			         <div class="clearfix"></div>
+	         {% for category in categories.all %}
+	           <div class="feature-grid col-md-4">
+	             <a href="product.html"><img src="/media/{{category.thumbnail}}" height="150px" alt=""/> 
+	               <div class="arrival-info" style="text-align:center"> 
+	                 <h4>{{item.category}}</h4>
+	                 <p style="margin-top:10px">{{category.name}}</p>
+	               </div>
+	               <div class="viw" style="text-align:center">
+	                <a href="product.html"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>Detalles</a>
+	               </div>
+	              </a>
+	           </div>
+	         {% endfor %}
+	         <div class="clearfix"></div>
 			</div>
-							 
 		</div>
 	</div>
 {% endblock main %}
