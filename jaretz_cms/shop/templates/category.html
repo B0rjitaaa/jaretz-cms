@@ -21,6 +21,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				</ol>
 			</div>
 			<h2>{{category.name}}</h2>
+			{% if not category.items.all %}
+				<div class="col-md-3"></div>
+				<div class="alert alert-warning col-md-6" style="margin-top:15px">
+	                <a href="#" class="close" data-dismiss="alert">&times;</a>
+	                <p style="text-align:center">No hay artículos en esta categoría. 
+	                <a href="{% url 'categories' %}">Volver</a></p>
+            	</div>
+			    <div class="col-md-6"></div>
+			{% endif %}
 			{% if category.subcategories  %}
 				<div class="col-md-3">
 					<section  class="sky-form">

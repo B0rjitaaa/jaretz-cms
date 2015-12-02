@@ -1,3 +1,5 @@
+import random
+
 from django.shortcuts import render
 
 from shop.models import Item, Banner, Shop, Offer, Category
@@ -15,13 +17,21 @@ def index(request):
 	popular_items = Item.objects.order_by('shown_times')[:12]
 	banners = Banner.objects.all()
 
+	result = []
+	for x in range (1, Offer.objects.all().count()):
+		num = random.randint(1, Offer.objects.all().count())
+		while num in result:
+			num = random.randint(1, Offer.objects.all().count())
+		result.append(num)
+
+
 	response = {
 		'categories': Category.objects.all().filter(parent_category=None),
 		'recent_items': recent_items,
 		'featured_items': featured_items,
 		'popular_items': popular_items,
 		'banners': banners,
-		'offers': Offer.objects.all()[:2],
+		'offers': Offer.objects.filter(id__in=result)[:2],
 		'shop_info': Shop.objects.all()[0]
 
 	}
