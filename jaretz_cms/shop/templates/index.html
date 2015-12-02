@@ -47,7 +47,7 @@
      <div class="container">
        <div class="items-sec">
          {% for item in recent_items %}
-           <div class="col-md-3 feature-grid">
+           <div class="col-md-3 feature-grid" style="margin-bottom:15px">
              <a href="{% url 'item' item.slug item.id %}">
               <div>
              <img src="/media/{{item.image}}" style="height:250px; width: 225px" alt=""/> 
@@ -73,10 +73,10 @@
   {% block offers %}
     <div class="offers">
       <div class="container">
-         <h3>Promociones</h3>
-         <div class="offer-grids">
-           <div class="col-md-6 grid-left">
-             <div class="offer-grid1" style="height:250px">
+        <h3>Promociones</h3>
+        <div class="offer-grids">
+          <div class="col-md-6 grid-left">
+            <div class="offer-grid1" style="height:250px">
               <div class="row">
                <div class="ofr-pic col-md-4">
                  <img src="{{offers.all.0.item.image.url}}" width="150px" style="margin-right:33%" alt=""/>

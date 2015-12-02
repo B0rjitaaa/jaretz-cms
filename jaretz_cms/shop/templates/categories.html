@@ -30,7 +30,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 									{% if category.subcategories %}
 										{% for cat in category.subcategories %}
 											<div class="single-bottom">						
-													<a href="#"><p>{{cat.name}}</p></a>
+													<a href="{% url 'category' cat.slug cat.id %}"><p>{{cat.name}}</p></a>
 										    </div>
 										{% endfor %}
 									{% endif %}
@@ -39,7 +39,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						</div>					 
 				</section>
 			</div>			
-			<div class="product-model-sec col-md-9">
+			<div class="product-model-sec col-md-9" style="margin-bottom:15px">
 	         {% for category in categories.all %}
 	           <div class="feature-grid col-md-4">
 	             <a href="{% url 'category' category.slug category.id %}"><img src="/media/{{category.thumbnail}}" height="150px" alt=""/> 
