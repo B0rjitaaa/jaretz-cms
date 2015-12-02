@@ -23,38 +23,18 @@ def upload_to(instance, filename):
 
 
 class Offer(models.Model):
-	name = models.CharField(
-		_('name'),
-		max_length=50,
-		blank=True,
-		null=True
-	)
-
-	short_description = models.CharField(
-		_('short description'),
-		max_length=100,
-		blank=True,
-		null=True
-	)
-
-	price = models.DecimalField(
-		_('price'),
-		max_digits=8,
-		decimal_places=2
-	)
-
-	image = models.ImageField(
-		_('image'),
-		upload_to=upload_to,
-		null=True,
-		blank=True,
-		max_length=1000
-	)
-
+	item = models.ForeignKey(
+        'Item',
+        related_name='items',
+        related_query_name='item',
+        verbose_name=_('item offer'),
+        blank=True,
+        null=True
+    )
 	class Meta:
 		verbose_name='Offer'
 
 	def __str__(self):
-		return self.name
+		return self.item.name
 
     

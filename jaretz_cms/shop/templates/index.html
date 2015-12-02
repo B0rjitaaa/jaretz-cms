@@ -76,30 +76,30 @@
          <h3>Promociones</h3>
          <div class="offer-grids">
            <div class="col-md-6 grid-left">
-             <div class="offer-grid1">
+             <div class="offer-grid1" style="height:250px">
               <div class="row">
                <div class="ofr-pic col-md-4">
-                 <img src="{{offers.all.0.image.url}}" width="150px" style="margin-right:33%" alt=""/>
+                 <img src="{{offers.all.0.item.image.url}}" width="150px" style="margin-right:33%" alt=""/>
                </div>
                <div class="ofr-pic-info col-md-8">
-                 <h4>{{offers.all.0.name}} <br>{{offers.all.0.short_description}}</h4>
-                 <span>{{offers.all.0.price}} €</span>
-                 <p>Shop Now</p>
+                 <h4>{{offers.all.0.item.name}} <br>{{offers.all.0.short_description}}</h4>
+                 <span>{{offers.all.0.item.price}} €</span>
+                 <a href="{% url 'item' offers.all.0.item.slug offers.all.0.item.id %}"><p>Detalles</p></a>
                </div>
               </div>
                <div class="clearfix"></div>
              </div>
            </div>
            <div class="col-md-6 grid-left">
-             <div class="offer-grid2">
+             <div class="offer-grid2" style="height:250px">
               <div class="row">
                <div class="ofr-pic-info2 col-md-8">
-                 <h4>{{offers.all.1.name}} <br>{{offers.all.1.short_description}}</h4>
-                 <span>{{offers.all.1.price}} €</span>
-                 <p>Shop Now</p>
+                 <h4>{{offers.all.1.item.name}} <br>{{offers.all.1.short_description}}</h4>
+                 <span>{{offers.all.1.item.price}} €</span>
+                 <a href="{% url 'item' offers.all.1.item.slug offers.all.1.item.id %}"><p>Detalles</p></a>
                </div>
                <div class="ofr-pic2 col-md-4">
-                 <img src="{{offers.all.1.image.url}}" width="151px" style="margin-right:33%" alt=""/>
+                 <img src="{{offers.all.1.item.image.url}}" width="151px" style="margin-right:33%" alt=""/>
                </div>
               </div>
                <div class="clearfix"></div>
