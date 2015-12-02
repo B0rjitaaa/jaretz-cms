@@ -571,6 +571,12 @@ background: url('../../media/images/assets/social.png') no-repeat 0px 0px;
 display: inline-block;
 margin:0 5px;
 }
+.social a{
+	color:white;
+}
+.social a:hover{
+	color:black;
+}
 a i.facebook{
 background-position:-3px -2px;
 }

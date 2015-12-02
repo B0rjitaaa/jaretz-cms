@@ -4,34 +4,34 @@
 
 {% block main %}
 	<div class="contact">
-	  <div class="container">
-		 <ol class="breadcrumb">
-		  <li><a href="{% url 'index' %}">Inicio</a></li>
-		  <li class="active">Contacto</li>
-		 </ol>
+		<div class="container">
+			<ol class="breadcrumb">
+			 	<li><a href="{% url 'index' %}">Inicio</a></li>
+			  	<li class="active">Contacto</li>
+		 	</ol>
 			<!--start contact-->
 			<h3>Contacto</h3>
-		  <div class="section group">				
+		  	<div class="section group">				
 				<div class="col-md-6 span_1_of_3">
 					<div class="contact_info">
-			    	 	<h4>Find Us Here</h4>
+			    	 	<h4>Localización</h4>
 			    	 		<div class="map">
 					   			<iframe src="https://maps.google.co.in/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Lighthouse+Point,+FL,+United+States&amp;aq=4&amp;oq=light&amp;sll=26.275636,-80.087265&amp;sspn=0.04941,0.104628&amp;ie=UTF8&amp;hq=&amp;hnear=Lighthouse+Point,+Broward,+Florida,+United+States&amp;t=m&amp;z=14&amp;ll=26.275636,-80.087265&amp;output=embed"></iframe>
 					   		</div>
       				</div>
-      			<div class="company_address">
+      				<div class="company_address">
 				     	<h4>Información :</h4>
-						    	<p>{{shop_info.name}},</p>
-						   		<p>{{shop_info.address}},</p>
-						   		<p>{{shop_info.city}}</p>
+				    	<p>{{shop_info.name}},</p>
+				   		<p>{{shop_info.address}},</p>
+				   		<p>{{shop_info.city}}</p>
 				   		<p>Telf:(+34) {{shop_info.phone}}</p>
 				 	 	<p>Email: <a href="mailto:info@antiques-salvador.com">{{shop_info.email}}</a></p>
 				   		<p>Follow on: <a href="#">Facebook</a>, <a href="#">Twitter</a></p>
 				   </div>
 				</div>				
 				<div class="col-md-6 span_2_of_3">
-				  <div class="contact-form">
-					    <form>
+					<div class="contact-form">
+						<form>
 					    	<div>
 						    	<span><label>Nombre</label></span>
 						    	<span><input name="userName" type="text" class="textbox"></span>
@@ -54,10 +54,9 @@
 						   		<span><input type="submit" class="mybutton" value="Submit"></span>
 						  </div>
 					    </form>
-
 				    </div>
   				</div>				
-		  </div>
+		  	</div>
 	  </div>
-</div>
+	</div>
 {% endblock main %}
