@@ -14,6 +14,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<ol class="breadcrumb">
 					<li><a href="{% url 'index' %}">Inicio</a></li>
 					<li><a href="{% url 'categories' %}">Categorías</a></li>
+					{% if category.parent_category %}
+						<li><a href="{% url 'category' category.parent_category.slug category.parent_category.id %}">{{category.parent_category.name}}</a></li>
+					{% endif %}
 					<li class="active">{{category.name}}</li>
 				</ol>
 			</div>
@@ -64,7 +67,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			       		<div class="items-sec">
 				        	{% for item in category.items.all %}
 				           		<div class="col-md-3 feature-grid">
-					             <a href="product.html">
+					             <a href="{% url 'item' item.slug item.id %}">
 					              <div style="height:250px" >
 					             <img src="/media/{{item.image}}" alt=""/> 
 					             </div>
@@ -74,7 +77,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					                 <p style="color:green">{{item.price}}€</p>
 					               </div>
 					               <div class="viw" style="text-align:center">
-					                <a href="product.html"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>Detalles</a>
+					                <a href="{% url 'item' item.slug item.id %}<span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>Detalles</a>
 					               </div>
 					              </a>
 					         	</div>
