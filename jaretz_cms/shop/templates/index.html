@@ -48,9 +48,9 @@
        <div class="items-sec">
          {% for item in recent_items %}
            <div class="col-md-3 feature-grid">
-             <a href="product.html">
+             <a href="{% url 'item' item.slug item.id %}">
               <div>
-             <img src="/media/{{item.image}}" style="height:150px; width: 200px" alt=""/> 
+             <img src="/media/{{item.image}}" style="height:250px; width: 225px" alt=""/> 
              </div>
                <div class="arrival-info" style="text-align:center; margin-top:10px">
                  <h4>{{item.category}}</h4>
@@ -58,7 +58,7 @@
                  <p style="color:green">{{item.price}}€</p>
                </div>
                <div class="viw" style="text-align:center">
-                <a href="product.html"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>Detalles</a>
+                <a href="{% url 'item' item.slug item.id %}"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>Detalles</a>
                </div>
               </a>
            </div>

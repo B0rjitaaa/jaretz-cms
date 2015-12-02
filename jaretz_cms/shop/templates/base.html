@@ -158,6 +158,18 @@
     <script type="text/javascript" src="{% static 'js/memenu.js' %}"></script>
     <script src="{% static 'js/responsiveslides.min.js' %}"></script>
 
+    <script src="{% static 'js/imagezoom.js' %}"></script>
+              <script defer src="{% static 'js/jquery.flexslider.js' %}"></script>
+              <script>
+              // Can also be used with $(document).ready()
+              $(window).load(function() {
+                $('.flexslider').flexslider({
+                animation: "slide",
+                controlNav: "thumbnails"
+                });
+              });
+              </script>
+
     <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
     <!-- start menu -->
     <!-- start menu -->

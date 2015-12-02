@@ -65,10 +65,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				        	{% for item in category.items.all %}
 				           		<div class="col-md-3 feature-grid">
 					             <a href="product.html">
-					              <div style="height:250px; margin:20px" >
+					              <div style="height:250px" >
 					             <img src="/media/{{item.image}}" alt=""/> 
 					             </div>
-					               <div class="arrival-info" style="text-align:center">
+					               <div class="arrival-info" style="text-align:center; margin-top:10px">
 					                 <h4>{{item.category}}</h4>
 					                 <p>{{item.name}}</p>
 					                 <p style="color:green">{{item.price}}€</p>

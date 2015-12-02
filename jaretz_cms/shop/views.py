@@ -28,10 +28,12 @@ def index(request):
 	return render(request, 'index.html', response)
 
 
-def item(request):
+def item(request, item_slug, item_id):
+	item = Item.objects.get(pk=item_id)
 	response = {
 		'shop_info': Shop.objects.all()[0],
-		'items': Item.objects.all()
+		'item': item,
+		'items': item.category.items.all().exclude(reference_code=item.reference_code)
 	}
 	return render (request, 'item.html', response)
 
