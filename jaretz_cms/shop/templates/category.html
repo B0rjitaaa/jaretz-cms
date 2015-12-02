@@ -35,7 +35,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 										{% if category.subcategories %}
 											{% for cat in category.subcategories %}
 												<div class="single-bottom">						
-														<a href="#"><p>{{cat.name}}</p></a>
+														<a href="{% url 'category' cat.slug cat.id %}"><p>{{cat.name}}</p></a>
 											    </div>
 											{% endfor %}
 										{% endif %}
@@ -77,7 +77,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					                 <p style="color:green">{{item.price}}€</p>
 					               </div>
 					               <div class="viw" style="text-align:center">
-					                <a href="{% url 'item' item.slug item.id %}<span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>Detalles</a>
+					                <a href="{% url 'item' item.slug item.id %}" <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>Detalles</a>
 					               </div>
 					              </a>
 					         	</div>
