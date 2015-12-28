@@ -21,7 +21,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				</ol>
 			</div>
 			<h2>{{category.name}}</h2>
-			{% if not category.items.all %}
+			{% if not category.items.all and not category.subcategories.all %}
 				<div class="col-md-3"></div>
 				<div class="alert alert-warning col-md-6" style="margin-top:15px">
 	                <a href="{% url 'categories' %}" class="close" data-dismiss="alert">&times;</a>

@@ -1,1 +1,1073 @@
-[{"fields": {"model": "logentry", "name": "", "app_label": "admin"}, "model": "contenttypes.contenttype", "pk": 1}, {"fields": {"model": "permission", "name": "", "app_label": "auth"}, "model": "contenttypes.contenttype", "pk": 2}, {"fields": {"model": "group", "name": "", "app_label": "auth"}, "model": "contenttypes.contenttype", "pk": 3}, {"fields": {"model": "user", "name": "", "app_label": "auth"}, "model": "contenttypes.contenttype", "pk": 4}, {"fields": {"model": "contenttype", "name": "", "app_label": "contenttypes"}, "model": "contenttypes.contenttype", "pk": 5}, {"fields": {"model": "session", "name": "", "app_label": "sessions"}, "model": "contenttypes.contenttype", "pk": 6}, {"fields": {"model": "category", "name": "", "app_label": "shop"}, "model": "contenttypes.contenttype", "pk": 7}, {"fields": {"model": "item", "name": "", "app_label": "shop"}, "model": "contenttypes.contenttype", "pk": 8}, {"fields": {"model": "shop", "name": "", "app_label": "shop"}, "model": "contenttypes.contenttype", "pk": 9}, {"fields": {"model": "banner", "name": "", "app_label": "shop"}, "model": "contenttypes.contenttype", "pk": 10}, {"fields": {"model": "offer", "name": "", "app_label": "shop"}, "model": "contenttypes.contenttype", "pk": 11}, {"fields": {"session_data": "MmJjNTRlZDAxZjY4ODM5OTVhNTZjZDBkYTA3YjJmZjk4ZjQwMmE4Yjp7Il9hdXRoX3VzZXJfaGFzaCI6IjNkOTY0NGU3YjQ5NzA1YTM5YzliZjhlODJjYmNkZTkwZTU5YWM5ZTgiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOiIxIn0=", "expire_date": "2015-12-08T19:14:58.504Z"}, "model": "sessions.session", "pk": "2xxnhp98wa2yfs4yqsejh4aizkv7bo6y"}, {"fields": {"session_data": "MTdjZjI1MjY2Nzk0M2U1ODY4NjFlZGZhZmFkODNmMzE5YWQzMGM4ZTp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6MSwiX2F1dGhfdXNlcl9oYXNoIjoiNzE3MTJmZGY1ZmQzYTc4NmFlOGM5MTVhOTllMjhiYzMzOWE4MjRjNiJ9", "expire_date": "2015-11-25T22:46:39.653Z"}, "model": "sessions.session", "pk": "35wbhm5cmbay31hirflvw9mc9mzeufpv"}, {"fields": {"session_data": "ZjhmZjVjOGFlOWFkY2E2YzNhZDI3ZmIzMmEyNTY0YWJjYWM1NWVhYTp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9oYXNoIjoiM2Q5NjQ0ZTdiNDk3MDVhMzljOWJmOGU4MmNiY2RlOTBlNTlhYzllOCIsIl9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIn0=", "expire_date": "2015-12-14T12:40:08.023Z"}, "model": "sessions.session", "pk": "nppnw4iuavfjtw0kj6wxoprsepglwvp0"}, {"fields": {"session_data": "Yzk4MGUzNWQwMDBhM2I5MmUzY2EyYzAxOWU1YTQ5NjY2OTQzZmU3ZTp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6MSwiX2F1dGhfdXNlcl9oYXNoIjoiMTZhMTQ5YTJhYTI4YWJkZjliNmUyMWUyZDRlYWQ1ZGJhMWY0NDFlZiJ9", "expire_date": "2015-12-15T20:01:47.159Z"}, "model": "sessions.session", "pk": "sobf8gguzzz4g7wy2q8z0mgr2745senc"}, {"fields": {"parent_category": null, "slug": "cachimbas", "meta_tag": "", "thumbnail": "images/categories/23aa5f823b51452f8e4e52425e2441c2.jpg", "description": "Pues eso", "header_image": "images/categories/017038d55f9245c6a47339b5324881f3.png", "name": "Cachimbas"}, "model": "shop.category", "pk": 1}, {"fields": {"parent_category": 1, "slug": "dud", "meta_tag": "", "thumbnail": "images/categories/68b7cfc74c3a40a2a581e5d144a01e63.jpg", "description": "Cachimas dud", "header_image": "", "name": "DUD"}, "model": "shop.category", "pk": 2}, {"fields": {"parent_category": null, "slug": "carbones", "meta_tag": "", "thumbnail": "images/categories/afa0f6301f6d43d69fd47883af7d41e8.jpg", "description": "Selecci\u00f3n de carbones naturales", "header_image": "", "name": "Carbones"}, "model": "shop.category", "pk": 3}, {"fields": {"parent_category": null, "slug": "accesorios", "meta_tag": "", "thumbnail": "images/categories/0bf1e7c0653e48b3b252b357b87c6617.jpg", "description": "Gran surtido de accesiorios", "header_image": "", "name": "Accesorios"}, "model": "shop.category", "pk": 4}, {"fields": {"parent_category": null, "slug": "sabores", "meta_tag": "", "thumbnail": "images/categories/88e8f2d9eced42b69b5436fa82e6dc3f.jpg", "description": "Buenas marcas", "header_image": "", "name": "Sabores"}, "model": "shop.category", "pk": 5}, {"fields": {"parent_category": 1, "slug": "khalil-mamoon", "meta_tag": "", "thumbnail": "images/categories/2a5ae6840cba4cf8bb433c038dfddcbc.jpg", "description": "asc", "header_image": "", "name": " khalil mamoon"}, "model": "shop.category", "pk": 6}, {"fields": {"parent_category": 1, "slug": "kaya", "meta_tag": "", "thumbnail": "images/categories/23532651ef0648f7bd25cf2e8c17b280.jpg", "description": "Cachimbas kaya", "header_image": "", "name": "Kaya"}, "model": "shop.category", "pk": 7}, {"fields": {"reference_code": "cah_1", "wholesale_price": "40", "category": 2, "shown_times": 0, "starred": false, "name": "Dud 7.0 ", "image": "images/items/64e61d23f7e442d9ae2c3305fc9d8e19.jpg", "slug": "dud-70", "times_sold": 0, "upload_date": "2015-11-30", "visible": true, "price": "60"}, "model": "shop.item", "pk": 1}, {"fields": {"reference_code": "carb_1", "wholesale_price": "10", "category": 1, "shown_times": 0, "starred": false, "name": "Carbones Cocobrico", "image": "images/items/9d0d9d85a9ef4b6aa0361594f21e6aa6.jpg", "slug": "carbones-cocobrico", "times_sold": 0, "upload_date": "2015-12-01", "visible": true, "price": "100"}, "model": "shop.item", "pk": 2}, {"fields": {"reference_code": "nose", "wholesale_price": "1", "category": 1, "shown_times": 55, "starred": true, "name": "nose", "image": "", "slug": "nose", "times_sold": 23, "upload_date": "2015-11-12", "visible": true, "price": "10"}, "model": "shop.item", "pk": 3}, {"fields": {"reference_code": "ninini", "wholesale_price": "10", "category": 1, "shown_times": 13, "starred": false, "name": "khalil mamoon", "image": "images/items/388019d7e5ef435098f0fc9bf05f06fe.jpg", "slug": "khalil-mamoon", "times_sold": 0, "upload_date": "2015-11-12", "visible": true, "price": "125"}, "model": "shop.item", "pk": 4}, {"fields": {"terms_use_privacy": "test", "phone": "9999", "slogan": "test", "zip_code": "41008", "tax_number": "test", "address": "test", "name": "Test", "city": "test", "country": "Sevilla", "return_policy": "tetst", "town_ship": "test", "email": "test@us.es"}, "model": "shop.shop", "pk": 1}, {"fields": {"name": "grande", "image": "images/banners/cb1beb3f62b24a36916f08f3c4e32dd6.jpg"}, "model": "shop.banner", "pk": 1}, {"fields": {"name": "otro", "image": "images/banners/b9c5b3dec0bc42259e0106a164fd9045.jpg"}, "model": "shop.banner", "pk": 2}, {"fields": {"price": "25", "short_description": "Kaloud", "name": "Kaloud", "image": "images/offers/59a21cda878c48b0a23141ba5f79b214.jpg"}, "model": "shop.offer", "pk": 1}, {"fields": {"price": "10", "short_description": "bazooka shisha", "name": "Bazooka", "image": "images/offers/c04e5c9de5fb48b3aa476d03fcdf1545.jpg"}, "model": "shop.offer", "pk": 2}, {"fields": {"codename": "add_logentry", "name": "Can add log entry", "content_type": 1}, "model": "auth.permission", "pk": 1}, {"fields": {"codename": "change_logentry", "name": "Can change log entry", "content_type": 1}, "model": "auth.permission", "pk": 2}, {"fields": {"codename": "delete_logentry", "name": "Can delete log entry", "content_type": 1}, "model": "auth.permission", "pk": 3}, {"fields": {"codename": "add_permission", "name": "Can add permission", "content_type": 2}, "model": "auth.permission", "pk": 4}, {"fields": {"codename": "change_permission", "name": "Can change permission", "content_type": 2}, "model": "auth.permission", "pk": 5}, {"fields": {"codename": "delete_permission", "name": "Can delete permission", "content_type": 2}, "model": "auth.permission", "pk": 6}, {"fields": {"codename": "add_group", "name": "Can add group", "content_type": 3}, "model": "auth.permission", "pk": 7}, {"fields": {"codename": "change_group", "name": "Can change group", "content_type": 3}, "model": "auth.permission", "pk": 8}, {"fields": {"codename": "delete_group", "name": "Can delete group", "content_type": 3}, "model": "auth.permission", "pk": 9}, {"fields": {"codename": "add_user", "name": "Can add user", "content_type": 4}, "model": "auth.permission", "pk": 10}, {"fields": {"codename": "change_user", "name": "Can change user", "content_type": 4}, "model": "auth.permission", "pk": 11}, {"fields": {"codename": "delete_user", "name": "Can delete user", "content_type": 4}, "model": "auth.permission", "pk": 12}, {"fields": {"codename": "add_contenttype", "name": "Can add content type", "content_type": 5}, "model": "auth.permission", "pk": 13}, {"fields": {"codename": "change_contenttype", "name": "Can change content type", "content_type": 5}, "model": "auth.permission", "pk": 14}, {"fields": {"codename": "delete_contenttype", "name": "Can delete content type", "content_type": 5}, "model": "auth.permission", "pk": 15}, {"fields": {"codename": "add_session", "name": "Can add session", "content_type": 6}, "model": "auth.permission", "pk": 16}, {"fields": {"codename": "change_session", "name": "Can change session", "content_type": 6}, "model": "auth.permission", "pk": 17}, {"fields": {"codename": "delete_session", "name": "Can delete session", "content_type": 6}, "model": "auth.permission", "pk": 18}, {"fields": {"codename": "add_category", "name": "Can add category", "content_type": 7}, "model": "auth.permission", "pk": 19}, {"fields": {"codename": "change_category", "name": "Can change category", "content_type": 7}, "model": "auth.permission", "pk": 20}, {"fields": {"codename": "delete_category", "name": "Can delete category", "content_type": 7}, "model": "auth.permission", "pk": 21}, {"fields": {"codename": "add_item", "name": "Can add Item", "content_type": 8}, "model": "auth.permission", "pk": 22}, {"fields": {"codename": "change_item", "name": "Can change Item", "content_type": 8}, "model": "auth.permission", "pk": 23}, {"fields": {"codename": "delete_item", "name": "Can delete Item", "content_type": 8}, "model": "auth.permission", "pk": 24}, {"fields": {"codename": "add_shop", "name": "Can add shop information", "content_type": 9}, "model": "auth.permission", "pk": 25}, {"fields": {"codename": "change_shop", "name": "Can change shop information", "content_type": 9}, "model": "auth.permission", "pk": 26}, {"fields": {"codename": "delete_shop", "name": "Can delete shop information", "content_type": 9}, "model": "auth.permission", "pk": 27}, {"fields": {"codename": "add_banner", "name": "Can add banner", "content_type": 10}, "model": "auth.permission", "pk": 28}, {"fields": {"codename": "change_banner", "name": "Can change banner", "content_type": 10}, "model": "auth.permission", "pk": 29}, {"fields": {"codename": "delete_banner", "name": "Can delete banner", "content_type": 10}, "model": "auth.permission", "pk": 30}, {"fields": {"codename": "add_offer", "name": "Can add offer", "content_type": 11}, "model": "auth.permission", "pk": 31}, {"fields": {"codename": "change_offer", "name": "Can change offer", "content_type": 11}, "model": "auth.permission", "pk": 32}, {"fields": {"codename": "delete_offer", "name": "Can delete offer", "content_type": 11}, "model": "auth.permission", "pk": 33}, {"fields": {"is_active": true, "groups": [], "last_login": "2015-12-01T20:01:47.058Z", "first_name": "", "is_superuser": true, "email": "admin@us.es", "user_permissions": [], "username": "admin", "password": "pbkdf2_sha256$15000$Y7aXJXudpnGU$fySgIKIUZ+qWtFoaHbUC0BNJiqW9IcYNcKUSoEnRhz0=", "last_name": "", "is_staff": true, "date_joined": "2015-11-24T19:14:49.517Z"}, "model": "auth.user", "pk": 1}, {"fields": {"action_flag": 1, "change_message": "", "object_repr": "Test", "object_id": "1", "action_time": "2015-11-24T19:15:32.113Z", "content_type": 9, "user": 1}, "model": "admin.logentry", "pk": 1}, {"fields": {"action_flag": 1, "change_message": "", "object_repr": "Cachimbas", "object_id": "1", "action_time": "2015-11-30T12:56:05.787Z", "content_type": 7, "user": 1}, "model": "admin.logentry", "pk": 2}, {"fields": {"action_flag": 1, "change_message": "", "object_repr": "Dud 7.0 ", "object_id": "1", "action_time": "2015-11-30T12:57:21.076Z", "content_type": 8, "user": 1}, "model": "admin.logentry", "pk": 3}, {"fields": {"action_flag": 1, "change_message": "", "object_repr": "Kaloud", "object_id": "1", "action_time": "2015-11-30T14:51:15.518Z", "content_type": 11, "user": 1}, "model": "admin.logentry", "pk": 4}, {"fields": {"action_flag": 2, "change_message": "Modificado/a image.", "object_repr": "Kaloud", "object_id": "1", "action_time": "2015-11-30T14:54:12.506Z", "content_type": 11, "user": 1}, "model": "admin.logentry", "pk": 5}, {"fields": {"action_flag": 2, "change_message": "Modificado/a image.", "object_repr": "Kaloud", "object_id": "1", "action_time": "2015-11-30T14:54:22.649Z", "content_type": 11, "user": 1}, "model": "admin.logentry", "pk": 6}, {"fields": {"action_flag": 1, "change_message": "", "object_repr": "Bazooka", "object_id": "2", "action_time": "2015-11-30T15:19:42.688Z", "content_type": 11, "user": 1}, "model": "admin.logentry", "pk": 7}, {"fields": {"action_flag": 2, "change_message": "Modificado/a image.", "object_repr": "Bazooka", "object_id": "2", "action_time": "2015-11-30T15:29:10.455Z", "content_type": 11, "user": 1}, "model": "admin.logentry", "pk": 8}, {"fields": {"action_flag": 2, "change_message": "Modificado/a image.", "object_repr": "Bazooka", "object_id": "2", "action_time": "2015-11-30T15:29:17.189Z", "content_type": 11, "user": 1}, "model": "admin.logentry", "pk": 9}, {"fields": {"action_flag": 1, "change_message": "", "object_repr": "grande", "object_id": "1", "action_time": "2015-11-30T16:29:10.870Z", "content_type": 10, "user": 1}, "model": "admin.logentry", "pk": 10}, {"fields": {"action_flag": 2, "change_message": "Modificado/a image.", "object_repr": "grande", "object_id": "1", "action_time": "2015-11-30T16:35:29.224Z", "content_type": 10, "user": 1}, "model": "admin.logentry", "pk": 11}, {"fields": {"action_flag": 2, "change_message": "Modificado/a image.", "object_repr": "grande", "object_id": "1", "action_time": "2015-11-30T16:39:33.742Z", "content_type": 10, "user": 1}, "model": "admin.logentry", "pk": 12}, {"fields": {"action_flag": 2, "change_message": "Modificado/a image.", "object_repr": "grande", "object_id": "1", "action_time": "2015-11-30T17:02:16.755Z", "content_type": 10, "user": 1}, "model": "admin.logentry", "pk": 13}, {"fields": {"action_flag": 1, "change_message": "", "object_repr": "otro", "object_id": "2", "action_time": "2015-12-01T11:30:49.436Z", "content_type": 10, "user": 1}, "model": "admin.logentry", "pk": 14}, {"fields": {"action_flag": 2, "change_message": "Modificado/a image.", "object_repr": "otro", "object_id": "2", "action_time": "2015-12-01T11:32:49.463Z", "content_type": 10, "user": 1}, "model": "admin.logentry", "pk": 15}, {"fields": {"action_flag": 1, "change_message": "", "object_repr": "DUD", "object_id": "2", "action_time": "2015-12-01T12:02:51.325Z", "content_type": 7, "user": 1}, "model": "admin.logentry", "pk": 16}, {"fields": {"action_flag": 1, "change_message": "", "object_repr": "Carbones", "object_id": "3", "action_time": "2015-12-01T12:24:48.312Z", "content_type": 7, "user": 1}, "model": "admin.logentry", "pk": 17}, {"fields": {"action_flag": 1, "change_message": "", "object_repr": "Accesorios", "object_id": "4", "action_time": "2015-12-01T12:26:53.577Z", "content_type": 7, "user": 1}, "model": "admin.logentry", "pk": 18}, {"fields": {"action_flag": 1, "change_message": "", "object_repr": "Sabores", "object_id": "5", "action_time": "2015-12-01T12:27:25.968Z", "content_type": 7, "user": 1}, "model": "admin.logentry", "pk": 19}, {"fields": {"action_flag": 2, "change_message": "Modificado/a header_image y thumbnail.", "object_repr": "Cachimbas", "object_id": "1", "action_time": "2015-12-01T14:40:33.326Z", "content_type": 7, "user": 1}, "model": "admin.logentry", "pk": 20}, {"fields": {"action_flag": 2, "change_message": "No ha cambiado ning\u00fan campo.", "object_repr": "Cachimbas", "object_id": "1", "action_time": "2015-12-01T14:49:06.789Z", "content_type": 7, "user": 1}, "model": "admin.logentry", "pk": 21}, {"fields": {"action_flag": 2, "change_message": "Modificado/a thumbnail.", "object_repr": "Carbones", "object_id": "3", "action_time": "2015-12-01T14:49:28.849Z", "content_type": 7, "user": 1}, "model": "admin.logentry", "pk": 22}, {"fields": {"action_flag": 2, "change_message": "Modificado/a thumbnail.", "object_repr": "Sabores", "object_id": "5", "action_time": "2015-12-01T14:49:38.464Z", "content_type": 7, "user": 1}, "model": "admin.logentry", "pk": 23}, {"fields": {"action_flag": 1, "change_message": "", "object_repr": "loca", "object_id": "6", "action_time": "2015-12-01T15:22:25.239Z", "content_type": 7, "user": 1}, "model": "admin.logentry", "pk": 24}, {"fields": {"action_flag": 2, "change_message": "Modificado/a thumbnail.", "object_repr": "Accesorios", "object_id": "4", "action_time": "2015-12-01T15:22:46.384Z", "content_type": 7, "user": 1}, "model": "admin.logentry", "pk": 25}, {"fields": {"action_flag": 2, "change_message": "Modificado/a thumbnail.", "object_repr": "Accesorios", "object_id": "4", "action_time": "2015-12-01T15:24:40.798Z", "content_type": 7, "user": 1}, "model": "admin.logentry", "pk": 26}, {"fields": {"action_flag": 2, "change_message": "Modificado/a thumbnail.", "object_repr": "Sabores", "object_id": "5", "action_time": "2015-12-01T15:27:00.554Z", "content_type": 7, "user": 1}, "model": "admin.logentry", "pk": 27}, {"fields": {"action_flag": 2, "change_message": "Modificado/a thumbnail.", "object_repr": "Sabores", "object_id": "5", "action_time": "2015-12-01T15:27:21.075Z", "content_type": 7, "user": 1}, "model": "admin.logentry", "pk": 28}, {"fields": {"action_flag": 2, "change_message": "Modificado/a thumbnail.", "object_repr": "Sabores", "object_id": "5", "action_time": "2015-12-01T15:27:40.507Z", "content_type": 7, "user": 1}, "model": "admin.logentry", "pk": 29}, {"fields": {"action_flag": 1, "change_message": "", "object_repr": "Carbones Cocobrico", "object_id": "2", "action_time": "2015-12-01T15:29:01.829Z", "content_type": 8, "user": 1}, "model": "admin.logentry", "pk": 30}, {"fields": {"action_flag": 2, "change_message": "Modificado/a category.", "object_repr": "Carbones Cocobrico", "object_id": "2", "action_time": "2015-12-01T15:31:03.957Z", "content_type": 8, "user": 1}, "model": "admin.logentry", "pk": 31}, {"fields": {"action_flag": 2, "change_message": "No ha cambiado ning\u00fan campo.", "object_repr": "Carbones Cocobrico", "object_id": "2", "action_time": "2015-12-01T16:05:37.989Z", "content_type": 8, "user": 1}, "model": "admin.logentry", "pk": 32}, {"fields": {"action_flag": 2, "change_message": "Modificado/a category.", "object_repr": "Dud 7.0 ", "object_id": "1", "action_time": "2015-12-01T16:06:28.781Z", "content_type": 8, "user": 1}, "model": "admin.logentry", "pk": 33}, {"fields": {"action_flag": 1, "change_message": "", "object_repr": "Kaya", "object_id": "7", "action_time": "2015-12-01T16:07:07.800Z", "content_type": 7, "user": 1}, "model": "admin.logentry", "pk": 34}, {"fields": {"action_flag": 2, "change_message": "Modificado/a thumbnail.", "object_repr": "Sabores", "object_id": "5", "action_time": "2015-12-01T16:22:38.991Z", "content_type": 7, "user": 1}, "model": "admin.logentry", "pk": 35}, {"fields": {"action_flag": 2, "change_message": "Modificado/a image.", "object_repr": "Dud 7.0 ", "object_id": "1", "action_time": "2015-12-01T20:02:31.105Z", "content_type": 8, "user": 1}, "model": "admin.logentry", "pk": 36}, {"fields": {"action_flag": 2, "change_message": "Modificado/a image.", "object_repr": "otro", "object_id": "2", "action_time": "2015-12-01T20:10:05.834Z", "content_type": 10, "user": 1}, "model": "admin.logentry", "pk": 37}, {"fields": {"action_flag": 2, "change_message": "Modificado/a name y image.", "object_repr": "khalil mamoon", "object_id": "4", "action_time": "2015-12-01T20:16:58.517Z", "content_type": 8, "user": 1}, "model": "admin.logentry", "pk": 38}, {"fields": {"action_flag": 2, "change_message": "Modificado/a thumbnail.", "object_repr": "DUD", "object_id": "2", "action_time": "2015-12-01T20:27:45.648Z", "content_type": 7, "user": 1}, "model": "admin.logentry", "pk": 39}, {"fields": {"action_flag": 2, "change_message": "Modificado/a name, thumbnail y parent_category.", "object_repr": " khalil mamoon", "object_id": "6", "action_time": "2015-12-01T20:28:49.892Z", "content_type": 7, "user": 1}, "model": "admin.logentry", "pk": 40}, {"fields": {"action_flag": 2, "change_message": "Modificado/a thumbnail.", "object_repr": "Kaya", "object_id": "7", "action_time": "2015-12-01T20:29:25.800Z", "content_type": 7, "user": 1}, "model": "admin.logentry", "pk": 41}]
+[{
+    "fields": {
+        "model": "logentry",
+        "name": "",
+        "app_label": "admin"
+    },
+    "model": "contenttypes.contenttype",
+    "pk": 1
+}, {
+    "fields": {
+        "model": "permission",
+        "name": "",
+        "app_label": "auth"
+    },
+    "model": "contenttypes.contenttype",
+    "pk": 2
+}, {
+    "fields": {
+        "model": "group",
+        "name": "",
+        "app_label": "auth"
+    },
+    "model": "contenttypes.contenttype",
+    "pk": 3
+}, {
+    "fields": {
+        "model": "user",
+        "name": "",
+        "app_label": "auth"
+    },
+    "model": "contenttypes.contenttype",
+    "pk": 4
+}, {
+    "fields": {
+        "model": "contenttype",
+        "name": "",
+        "app_label": "contenttypes"
+    },
+    "model": "contenttypes.contenttype",
+    "pk": 5
+}, {
+    "fields": {
+        "model": "session",
+        "name": "",
+        "app_label": "sessions"
+    },
+    "model": "contenttypes.contenttype",
+    "pk": 6
+}, {
+    "fields": {
+        "model": "category",
+        "name": "",
+        "app_label": "shop"
+    },
+    "model": "contenttypes.contenttype",
+    "pk": 7
+}, {
+    "fields": {
+        "model": "item",
+        "name": "",
+        "app_label": "shop"
+    },
+    "model": "contenttypes.contenttype",
+    "pk": 8
+}, {
+    "fields": {
+        "model": "shop",
+        "name": "",
+        "app_label": "shop"
+    },
+    "model": "contenttypes.contenttype",
+    "pk": 9
+}, {
+    "fields": {
+        "model": "banner",
+        "name": "",
+        "app_label": "shop"
+    },
+    "model": "contenttypes.contenttype",
+    "pk": 10
+}, {
+    "fields": {
+        "model": "offer",
+        "name": "",
+        "app_label": "shop"
+    },
+    "model": "contenttypes.contenttype",
+    "pk": 11
+}, {
+    "fields": {
+        "session_data": "MmJjNTRlZDAxZjY4ODM5OTVhNTZjZDBkYTA3YjJmZjk4ZjQwMmE4Yjp7Il9hdXRoX3VzZXJfaGFzaCI6IjNkOTY0NGU3YjQ5NzA1YTM5YzliZjhlODJjYmNkZTkwZTU5YWM5ZTgiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOiIxIn0=",
+        "expire_date": "2015-12-08T19:14:58.504Z"
+    },
+    "model": "sessions.session",
+    "pk": "2xxnhp98wa2yfs4yqsejh4aizkv7bo6y"
+}, {
+    "fields": {
+        "session_data": "MTdjZjI1MjY2Nzk0M2U1ODY4NjFlZGZhZmFkODNmMzE5YWQzMGM4ZTp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6MSwiX2F1dGhfdXNlcl9oYXNoIjoiNzE3MTJmZGY1ZmQzYTc4NmFlOGM5MTVhOTllMjhiYzMzOWE4MjRjNiJ9",
+        "expire_date": "2015-11-25T22:46:39.653Z"
+    },
+    "model": "sessions.session",
+    "pk": "35wbhm5cmbay31hirflvw9mc9mzeufpv"
+}, {
+    "fields": {
+        "session_data": "ZjhmZjVjOGFlOWFkY2E2YzNhZDI3ZmIzMmEyNTY0YWJjYWM1NWVhYTp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9oYXNoIjoiM2Q5NjQ0ZTdiNDk3MDVhMzljOWJmOGU4MmNiY2RlOTBlNTlhYzllOCIsIl9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIn0=",
+        "expire_date": "2015-12-14T12:40:08.023Z"
+    },
+    "model": "sessions.session",
+    "pk": "nppnw4iuavfjtw0kj6wxoprsepglwvp0"
+}, {
+    "fields": {
+        "session_data": "Yzk4MGUzNWQwMDBhM2I5MmUzY2EyYzAxOWU1YTQ5NjY2OTQzZmU3ZTp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6MSwiX2F1dGhfdXNlcl9oYXNoIjoiMTZhMTQ5YTJhYTI4YWJkZjliNmUyMWUyZDRlYWQ1ZGJhMWY0NDFlZiJ9",
+        "expire_date": "2015-12-15T20:01:47.159Z"
+    },
+    "model": "sessions.session",
+    "pk": "sobf8gguzzz4g7wy2q8z0mgr2745senc"
+}, {
+    "fields": {
+        "parent_category": null,
+        "slug": "cachimbas",
+        "meta_tag": "",
+        "thumbnail": "images/categories/23aa5f823b51452f8e4e52425e2441c2.jpg",
+        "description": "Pues eso",
+        "header_image": "images/categories/017038d55f9245c6a47339b5324881f3.png",
+        "name": "Cachimbas"
+    },
+    "model": "shop.category",
+    "pk": 1
+}, {
+    "fields": {
+        "parent_category": 1,
+        "slug": "dud",
+        "meta_tag": "",
+        "thumbnail": "images/categories/68b7cfc74c3a40a2a581e5d144a01e63.jpg",
+        "description": "Cachimas dud",
+        "header_image": "",
+        "name": "DUD"
+    },
+    "model": "shop.category",
+    "pk": 2
+}, {
+    "fields": {
+        "parent_category": null,
+        "slug": "carbones",
+        "meta_tag": "",
+        "thumbnail": "images/categories/afa0f6301f6d43d69fd47883af7d41e8.jpg",
+        "description": "Selecci\u00f3n de carbones naturales",
+        "header_image": "",
+        "name": "Carbones"
+    },
+    "model": "shop.category",
+    "pk": 3
+}, {
+    "fields": {
+        "parent_category": null,
+        "slug": "accesorios",
+        "meta_tag": "",
+        "thumbnail": "images/categories/0bf1e7c0653e48b3b252b357b87c6617.jpg",
+        "description": "Gran surtido de accesiorios",
+        "header_image": "",
+        "name": "Accesorios"
+    },
+    "model": "shop.category",
+    "pk": 4
+}, {
+    "fields": {
+        "parent_category": null,
+        "slug": "sabores",
+        "meta_tag": "",
+        "thumbnail": "images/categories/88e8f2d9eced42b69b5436fa82e6dc3f.jpg",
+        "description": "Buenas marcas",
+        "header_image": "",
+        "name": "Sabores"
+    },
+    "model": "shop.category",
+    "pk": 5
+}, {
+    "fields": {
+        "parent_category": 1,
+        "slug": "khalil-mamoon",
+        "meta_tag": "",
+        "thumbnail": "images/categories/2a5ae6840cba4cf8bb433c038dfddcbc.jpg",
+        "description": "asc",
+        "header_image": "",
+        "name": " khalil mamoon"
+    },
+    "model": "shop.category",
+    "pk": 6
+}, {
+    "fields": {
+        "parent_category": 1,
+        "slug": "kaya",
+        "meta_tag": "",
+        "thumbnail": "images/categories/23532651ef0648f7bd25cf2e8c17b280.jpg",
+        "description": "Cachimbas kaya",
+        "header_image": "",
+        "name": "Kaya"
+    },
+    "model": "shop.category",
+    "pk": 7
+}, {
+    "fields": {
+        "reference_code": "cah_1",
+        "wholesale_price": "40",
+        "category": 2,
+        "shown_times": 0,
+        "starred": false,
+        "name": "Dud 7.0 ",
+        "image": "images/items/64e61d23f7e442d9ae2c3305fc9d8e19.jpg",
+        "slug": "dud-70",
+        "times_sold": 0,
+        "upload_date": "2015-11-30",
+        "visible": true,
+        "price": "60"
+    },
+    "model": "shop.item",
+    "pk": 1
+}, {
+    "fields": {
+        "reference_code": "carb_1",
+        "wholesale_price": "10",
+        "category": 1,
+        "shown_times": 0,
+        "starred": false,
+        "name": "Carbones Cocobrico",
+        "image": "images/items/9d0d9d85a9ef4b6aa0361594f21e6aa6.jpg",
+        "slug": "carbones-cocobrico",
+        "times_sold": 0,
+        "upload_date": "2015-12-01",
+        "visible": true,
+        "price": "100"
+    },
+    "model": "shop.item",
+    "pk": 2
+}, {
+    "fields": {
+        "reference_code": "nose",
+        "wholesale_price": "1",
+        "category": 1,
+        "shown_times": 55,
+        "starred": true,
+        "name": "nose",
+        "image": "",
+        "slug": "nose",
+        "times_sold": 23,
+        "upload_date": "2015-11-12",
+        "visible": true,
+        "price": "10"
+    },
+    "model": "shop.item",
+    "pk": 3
+}, {
+    "fields": {
+        "reference_code": "ninini",
+        "wholesale_price": "10",
+        "category": 1,
+        "shown_times": 13,
+        "starred": false,
+        "name": "khalil mamoon",
+        "image": "images/items/388019d7e5ef435098f0fc9bf05f06fe.jpg",
+        "slug": "khalil-mamoon",
+        "times_sold": 0,
+        "upload_date": "2015-11-12",
+        "visible": true,
+        "price": "125"
+    },
+    "model": "shop.item",
+    "pk": 4
+}, {
+    "fields": {
+        "terms_use_privacy": "test",
+        "phone": "9999",
+        "slogan": "test",
+        "zip_code": "41008",
+        "tax_number": "test",
+        "address": "test",
+        "name": "Test",
+        "city": "test",
+        "country": "Sevilla",
+        "return_policy": "tetst",
+        "town_ship": "test",
+        "email": "test@us.es"
+    },
+    "model": "shop.shop",
+    "pk": 1
+}, {
+    "fields": {
+        "name": "grande",
+        "image": "images/banners/cb1beb3f62b24a36916f08f3c4e32dd6.jpg"
+    },
+    "model": "shop.banner",
+    "pk": 1
+}, {
+    "fields": {
+        "name": "otro",
+        "image": "images/banners/b9c5b3dec0bc42259e0106a164fd9045.jpg"
+    },
+    "model": "shop.banner",
+    "pk": 2
+}, {
+    "fields": {
+        "codename": "add_logentry",
+        "name": "Can add log entry",
+        "content_type": 1
+    },
+    "model": "auth.permission",
+    "pk": 1
+}, {
+    "fields": {
+        "codename": "change_logentry",
+        "name": "Can change log entry",
+        "content_type": 1
+    },
+    "model": "auth.permission",
+    "pk": 2
+}, {
+    "fields": {
+        "codename": "delete_logentry",
+        "name": "Can delete log entry",
+        "content_type": 1
+    },
+    "model": "auth.permission",
+    "pk": 3
+}, {
+    "fields": {
+        "codename": "add_permission",
+        "name": "Can add permission",
+        "content_type": 2
+    },
+    "model": "auth.permission",
+    "pk": 4
+}, {
+    "fields": {
+        "codename": "change_permission",
+        "name": "Can change permission",
+        "content_type": 2
+    },
+    "model": "auth.permission",
+    "pk": 5
+}, {
+    "fields": {
+        "codename": "delete_permission",
+        "name": "Can delete permission",
+        "content_type": 2
+    },
+    "model": "auth.permission",
+    "pk": 6
+}, {
+    "fields": {
+        "codename": "add_group",
+        "name": "Can add group",
+        "content_type": 3
+    },
+    "model": "auth.permission",
+    "pk": 7
+}, {
+    "fields": {
+        "codename": "change_group",
+        "name": "Can change group",
+        "content_type": 3
+    },
+    "model": "auth.permission",
+    "pk": 8
+}, {
+    "fields": {
+        "codename": "delete_group",
+        "name": "Can delete group",
+        "content_type": 3
+    },
+    "model": "auth.permission",
+    "pk": 9
+}, {
+    "fields": {
+        "codename": "add_user",
+        "name": "Can add user",
+        "content_type": 4
+    },
+    "model": "auth.permission",
+    "pk": 10
+}, {
+    "fields": {
+        "codename": "change_user",
+        "name": "Can change user",
+        "content_type": 4
+    },
+    "model": "auth.permission",
+    "pk": 11
+}, {
+    "fields": {
+        "codename": "delete_user",
+        "name": "Can delete user",
+        "content_type": 4
+    },
+    "model": "auth.permission",
+    "pk": 12
+}, {
+    "fields": {
+        "codename": "add_contenttype",
+        "name": "Can add content type",
+        "content_type": 5
+    },
+    "model": "auth.permission",
+    "pk": 13
+}, {
+    "fields": {
+        "codename": "change_contenttype",
+        "name": "Can change content type",
+        "content_type": 5
+    },
+    "model": "auth.permission",
+    "pk": 14
+}, {
+    "fields": {
+        "codename": "delete_contenttype",
+        "name": "Can delete content type",
+        "content_type": 5
+    },
+    "model": "auth.permission",
+    "pk": 15
+}, {
+    "fields": {
+        "codename": "add_session",
+        "name": "Can add session",
+        "content_type": 6
+    },
+    "model": "auth.permission",
+    "pk": 16
+}, {
+    "fields": {
+        "codename": "change_session",
+        "name": "Can change session",
+        "content_type": 6
+    },
+    "model": "auth.permission",
+    "pk": 17
+}, {
+    "fields": {
+        "codename": "delete_session",
+        "name": "Can delete session",
+        "content_type": 6
+    },
+    "model": "auth.permission",
+    "pk": 18
+}, {
+    "fields": {
+        "codename": "add_category",
+        "name": "Can add category",
+        "content_type": 7
+    },
+    "model": "auth.permission",
+    "pk": 19
+}, {
+    "fields": {
+        "codename": "change_category",
+        "name": "Can change category",
+        "content_type": 7
+    },
+    "model": "auth.permission",
+    "pk": 20
+}, {
+    "fields": {
+        "codename": "delete_category",
+        "name": "Can delete category",
+        "content_type": 7
+    },
+    "model": "auth.permission",
+    "pk": 21
+}, {
+    "fields": {
+        "codename": "add_item",
+        "name": "Can add Item",
+        "content_type": 8
+    },
+    "model": "auth.permission",
+    "pk": 22
+}, {
+    "fields": {
+        "codename": "change_item",
+        "name": "Can change Item",
+        "content_type": 8
+    },
+    "model": "auth.permission",
+    "pk": 23
+}, {
+    "fields": {
+        "codename": "delete_item",
+        "name": "Can delete Item",
+        "content_type": 8
+    },
+    "model": "auth.permission",
+    "pk": 24
+}, {
+    "fields": {
+        "codename": "add_shop",
+        "name": "Can add shop information",
+        "content_type": 9
+    },
+    "model": "auth.permission",
+    "pk": 25
+}, {
+    "fields": {
+        "codename": "change_shop",
+        "name": "Can change shop information",
+        "content_type": 9
+    },
+    "model": "auth.permission",
+    "pk": 26
+}, {
+    "fields": {
+        "codename": "delete_shop",
+        "name": "Can delete shop information",
+        "content_type": 9
+    },
+    "model": "auth.permission",
+    "pk": 27
+}, {
+    "fields": {
+        "codename": "add_banner",
+        "name": "Can add banner",
+        "content_type": 10
+    },
+    "model": "auth.permission",
+    "pk": 28
+}, {
+    "fields": {
+        "codename": "change_banner",
+        "name": "Can change banner",
+        "content_type": 10
+    },
+    "model": "auth.permission",
+    "pk": 29
+}, {
+    "fields": {
+        "codename": "delete_banner",
+        "name": "Can delete banner",
+        "content_type": 10
+    },
+    "model": "auth.permission",
+    "pk": 30
+}, {
+    "fields": {
+        "codename": "add_offer",
+        "name": "Can add offer",
+        "content_type": 11
+    },
+    "model": "auth.permission",
+    "pk": 31
+}, {
+    "fields": {
+        "codename": "change_offer",
+        "name": "Can change offer",
+        "content_type": 11
+    },
+    "model": "auth.permission",
+    "pk": 32
+}, {
+    "fields": {
+        "codename": "delete_offer",
+        "name": "Can delete offer",
+        "content_type": 11
+    },
+    "model": "auth.permission",
+    "pk": 33
+}, {
+    "fields": {
+        "is_active": true,
+        "groups": [],
+        "last_login": "2015-12-01T20:01:47.058Z",
+        "first_name": "",
+        "is_superuser": true,
+        "email": "admin@us.es",
+        "user_permissions": [],
+        "username": "admin",
+        "password": "pbkdf2_sha256$15000$Y7aXJXudpnGU$fySgIKIUZ+qWtFoaHbUC0BNJiqW9IcYNcKUSoEnRhz0=",
+        "last_name": "",
+        "is_staff": true,
+        "date_joined": "2015-11-24T19:14:49.517Z"
+    },
+    "model": "auth.user",
+    "pk": 1
+}, {
+    "fields": {
+        "action_flag": 1,
+        "change_message": "",
+        "object_repr": "Test",
+        "object_id": "1",
+        "action_time": "2015-11-24T19:15:32.113Z",
+        "content_type": 9,
+        "user": 1
+    },
+    "model": "admin.logentry",
+    "pk": 1
+}, {
+    "fields": {
+        "action_flag": 1,
+        "change_message": "",
+        "object_repr": "Cachimbas",
+        "object_id": "1",
+        "action_time": "2015-11-30T12:56:05.787Z",
+        "content_type": 7,
+        "user": 1
+    },
+    "model": "admin.logentry",
+    "pk": 2
+}, {
+    "fields": {
+        "action_flag": 1,
+        "change_message": "",
+        "object_repr": "Dud 7.0 ",
+        "object_id": "1",
+        "action_time": "2015-11-30T12:57:21.076Z",
+        "content_type": 8,
+        "user": 1
+    },
+    "model": "admin.logentry",
+    "pk": 3
+}, {
+    "fields": {
+        "action_flag": 1,
+        "change_message": "",
+        "object_repr": "Kaloud",
+        "object_id": "1",
+        "action_time": "2015-11-30T14:51:15.518Z",
+        "content_type": 11,
+        "user": 1
+    },
+    "model": "admin.logentry",
+    "pk": 4
+}, {
+    "fields": {
+        "action_flag": 2,
+        "change_message": "Modificado/a image.",
+        "object_repr": "Kaloud",
+        "object_id": "1",
+        "action_time": "2015-11-30T14:54:12.506Z",
+        "content_type": 11,
+        "user": 1
+    },
+    "model": "admin.logentry",
+    "pk": 5
+}, {
+    "fields": {
+        "action_flag": 2,
+        "change_message": "Modificado/a image.",
+        "object_repr": "Kaloud",
+        "object_id": "1",
+        "action_time": "2015-11-30T14:54:22.649Z",
+        "content_type": 11,
+        "user": 1
+    },
+    "model": "admin.logentry",
+    "pk": 6
+}, {
+    "fields": {
+        "action_flag": 1,
+        "change_message": "",
+        "object_repr": "Bazooka",
+        "object_id": "2",
+        "action_time": "2015-11-30T15:19:42.688Z",
+        "content_type": 11,
+        "user": 1
+    },
+    "model": "admin.logentry",
+    "pk": 7
+}, {
+    "fields": {
+        "action_flag": 2,
+        "change_message": "Modificado/a image.",
+        "object_repr": "Bazooka",
+        "object_id": "2",
+        "action_time": "2015-11-30T15:29:10.455Z",
+        "content_type": 11,
+        "user": 1
+    },
+    "model": "admin.logentry",
+    "pk": 8
+}, {
+    "fields": {
+        "action_flag": 2,
+        "change_message": "Modificado/a image.",
+        "object_repr": "Bazooka",
+        "object_id": "2",
+        "action_time": "2015-11-30T15:29:17.189Z",
+        "content_type": 11,
+        "user": 1
+    },
+    "model": "admin.logentry",
+    "pk": 9
+}, {
+    "fields": {
+        "action_flag": 1,
+        "change_message": "",
+        "object_repr": "grande",
+        "object_id": "1",
+        "action_time": "2015-11-30T16:29:10.870Z",
+        "content_type": 10,
+        "user": 1
+    },
+    "model": "admin.logentry",
+    "pk": 10
+}, {
+    "fields": {
+        "action_flag": 2,
+        "change_message": "Modificado/a image.",
+        "object_repr": "grande",
+        "object_id": "1",
+        "action_time": "2015-11-30T16:35:29.224Z",
+        "content_type": 10,
+        "user": 1
+    },
+    "model": "admin.logentry",
+    "pk": 11
+}, {
+    "fields": {
+        "action_flag": 2,
+        "change_message": "Modificado/a image.",
+        "object_repr": "grande",
+        "object_id": "1",
+        "action_time": "2015-11-30T16:39:33.742Z",
+        "content_type": 10,
+        "user": 1
+    },
+    "model": "admin.logentry",
+    "pk": 12
+}, {
+    "fields": {
+        "action_flag": 2,
+        "change_message": "Modificado/a image.",
+        "object_repr": "grande",
+        "object_id": "1",
+        "action_time": "2015-11-30T17:02:16.755Z",
+        "content_type": 10,
+        "user": 1
+    },
+    "model": "admin.logentry",
+    "pk": 13
+}, {
+    "fields": {
+        "action_flag": 1,
+        "change_message": "",
+        "object_repr": "otro",
+        "object_id": "2",
+        "action_time": "2015-12-01T11:30:49.436Z",
+        "content_type": 10,
+        "user": 1
+    },
+    "model": "admin.logentry",
+    "pk": 14
+}, {
+    "fields": {
+        "action_flag": 2,
+        "change_message": "Modificado/a image.",
+        "object_repr": "otro",
+        "object_id": "2",
+        "action_time": "2015-12-01T11:32:49.463Z",
+        "content_type": 10,
+        "user": 1
+    },
+    "model": "admin.logentry",
+    "pk": 15
+}, {
+    "fields": {
+        "action_flag": 1,
+        "change_message": "",
+        "object_repr": "DUD",
+        "object_id": "2",
+        "action_time": "2015-12-01T12:02:51.325Z",
+        "content_type": 7,
+        "user": 1
+    },
+    "model": "admin.logentry",
+    "pk": 16
+}, {
+    "fields": {
+        "action_flag": 1,
+        "change_message": "",
+        "object_repr": "Carbones",
+        "object_id": "3",
+        "action_time": "2015-12-01T12:24:48.312Z",
+        "content_type": 7,
+        "user": 1
+    },
+    "model": "admin.logentry",
+    "pk": 17
+}, {
+    "fields": {
+        "action_flag": 1,
+        "change_message": "",
+        "object_repr": "Accesorios",
+        "object_id": "4",
+        "action_time": "2015-12-01T12:26:53.577Z",
+        "content_type": 7,
+        "user": 1
+    },
+    "model": "admin.logentry",
+    "pk": 18
+}, {
+    "fields": {
+        "action_flag": 1,
+        "change_message": "",
+        "object_repr": "Sabores",
+        "object_id": "5",
+        "action_time": "2015-12-01T12:27:25.968Z",
+        "content_type": 7,
+        "user": 1
+    },
+    "model": "admin.logentry",
+    "pk": 19
+}, {
+    "fields": {
+        "action_flag": 2,
+        "change_message": "Modificado/a header_image y thumbnail.",
+        "object_repr": "Cachimbas",
+        "object_id": "1",
+        "action_time": "2015-12-01T14:40:33.326Z",
+        "content_type": 7,
+        "user": 1
+    },
+    "model": "admin.logentry",
+    "pk": 20
+}, {
+    "fields": {
+        "action_flag": 2,
+        "change_message": "No ha cambiado ning\u00fan campo.",
+        "object_repr": "Cachimbas",
+        "object_id": "1",
+        "action_time": "2015-12-01T14:49:06.789Z",
+        "content_type": 7,
+        "user": 1
+    },
+    "model": "admin.logentry",
+    "pk": 21
+}, {
+    "fields": {
+        "action_flag": 2,
+        "change_message": "Modificado/a thumbnail.",
+        "object_repr": "Carbones",
+        "object_id": "3",
+        "action_time": "2015-12-01T14:49:28.849Z",
+        "content_type": 7,
+        "user": 1
+    },
+    "model": "admin.logentry",
+    "pk": 22
+}, {
+    "fields": {
+        "action_flag": 2,
+        "change_message": "Modificado/a thumbnail.",
+        "object_repr": "Sabores",
+        "object_id": "5",
+        "action_time": "2015-12-01T14:49:38.464Z",
+        "content_type": 7,
+        "user": 1
+    },
+    "model": "admin.logentry",
+    "pk": 23
+}, {
+    "fields": {
+        "action_flag": 1,
+        "change_message": "",
+        "object_repr": "loca",
+        "object_id": "6",
+        "action_time": "2015-12-01T15:22:25.239Z",
+        "content_type": 7,
+        "user": 1
+    },
+    "model": "admin.logentry",
+    "pk": 24
+}, {
+    "fields": {
+        "action_flag": 2,
+        "change_message": "Modificado/a thumbnail.",
+        "object_repr": "Accesorios",
+        "object_id": "4",
+        "action_time": "2015-12-01T15:22:46.384Z",
+        "content_type": 7,
+        "user": 1
+    },
+    "model": "admin.logentry",
+    "pk": 25
+}, {
+    "fields": {
+        "action_flag": 2,
+        "change_message": "Modificado/a thumbnail.",
+        "object_repr": "Accesorios",
+        "object_id": "4",
+        "action_time": "2015-12-01T15:24:40.798Z",
+        "content_type": 7,
+        "user": 1
+    },
+    "model": "admin.logentry",
+    "pk": 26
+}, {
+    "fields": {
+        "action_flag": 2,
+        "change_message": "Modificado/a thumbnail.",
+        "object_repr": "Sabores",
+        "object_id": "5",
+        "action_time": "2015-12-01T15:27:00.554Z",
+        "content_type": 7,
+        "user": 1
+    },
+    "model": "admin.logentry",
+    "pk": 27
+}, {
+    "fields": {
+        "action_flag": 2,
+        "change_message": "Modificado/a thumbnail.",
+        "object_repr": "Sabores",
+        "object_id": "5",
+        "action_time": "2015-12-01T15:27:21.075Z",
+        "content_type": 7,
+        "user": 1
+    },
+    "model": "admin.logentry",
+    "pk": 28
+}, {
+    "fields": {
+        "action_flag": 2,
+        "change_message": "Modificado/a thumbnail.",
+        "object_repr": "Sabores",
+        "object_id": "5",
+        "action_time": "2015-12-01T15:27:40.507Z",
+        "content_type": 7,
+        "user": 1
+    },
+    "model": "admin.logentry",
+    "pk": 29
+}, {
+    "fields": {
+        "action_flag": 1,
+        "change_message": "",
+        "object_repr": "Carbones Cocobrico",
+        "object_id": "2",
+        "action_time": "2015-12-01T15:29:01.829Z",
+        "content_type": 8,
+        "user": 1
+    },
+    "model": "admin.logentry",
+    "pk": 30
+}, {
+    "fields": {
+        "action_flag": 2,
+        "change_message": "Modificado/a category.",
+        "object_repr": "Carbones Cocobrico",
+        "object_id": "2",
+        "action_time": "2015-12-01T15:31:03.957Z",
+        "content_type": 8,
+        "user": 1
+    },
+    "model": "admin.logentry",
+    "pk": 31
+}, {
+    "fields": {
+        "action_flag": 2,
+        "change_message": "No ha cambiado ning\u00fan campo.",
+        "object_repr": "Carbones Cocobrico",
+        "object_id": "2",
+        "action_time": "2015-12-01T16:05:37.989Z",
+        "content_type": 8,
+        "user": 1
+    },
+    "model": "admin.logentry",
+    "pk": 32
+}, {
+    "fields": {
+        "action_flag": 2,
+        "change_message": "Modificado/a category.",
+        "object_repr": "Dud 7.0 ",
+        "object_id": "1",
+        "action_time": "2015-12-01T16:06:28.781Z",
+        "content_type": 8,
+        "user": 1
+    },
+    "model": "admin.logentry",
+    "pk": 33
+}, {
+    "fields": {
+        "action_flag": 1,
+        "change_message": "",
+        "object_repr": "Kaya",
+        "object_id": "7",
+        "action_time": "2015-12-01T16:07:07.800Z",
+        "content_type": 7,
+        "user": 1
+    },
+    "model": "admin.logentry",
+    "pk": 34
+}, {
+    "fields": {
+        "action_flag": 2,
+        "change_message": "Modificado/a thumbnail.",
+        "object_repr": "Sabores",
+        "object_id": "5",
+        "action_time": "2015-12-01T16:22:38.991Z",
+        "content_type": 7,
+        "user": 1
+    },
+    "model": "admin.logentry",
+    "pk": 35
+}, {
+    "fields": {
+        "action_flag": 2,
+        "change_message": "Modificado/a image.",
+        "object_repr": "Dud 7.0 ",
+        "object_id": "1",
+        "action_time": "2015-12-01T20:02:31.105Z",
+        "content_type": 8,
+        "user": 1
+    },
+    "model": "admin.logentry",
+    "pk": 36
+}, {
+    "fields": {
+        "action_flag": 2,
+        "change_message": "Modificado/a image.",
+        "object_repr": "otro",
+        "object_id": "2",
+        "action_time": "2015-12-01T20:10:05.834Z",
+        "content_type": 10,
+        "user": 1
+    },
+    "model": "admin.logentry",
+    "pk": 37
+}, {
+    "fields": {
+        "action_flag": 2,
+        "change_message": "Modificado/a name y image.",
+        "object_repr": "khalil mamoon",
+        "object_id": "4",
+        "action_time": "2015-12-01T20:16:58.517Z",
+        "content_type": 8,
+        "user": 1
+    },
+    "model": "admin.logentry",
+    "pk": 38
+}, {
+    "fields": {
+        "action_flag": 2,
+        "change_message": "Modificado/a thumbnail.",
+        "object_repr": "DUD",
+        "object_id": "2",
+        "action_time": "2015-12-01T20:27:45.648Z",
+        "content_type": 7,
+        "user": 1
+    },
+    "model": "admin.logentry",
+    "pk": 39
+}, {
+    "fields": {
+        "action_flag": 2,
+        "change_message": "Modificado/a name, thumbnail y parent_category.",
+        "object_repr": " khalil mamoon",
+        "object_id": "6",
+        "action_time": "2015-12-01T20:28:49.892Z",
+        "content_type": 7,
+        "user": 1
+    },
+    "model": "admin.logentry",
+    "pk": 40
+}, {
+    "fields": {
+        "action_flag": 2,
+        "change_message": "Modificado/a thumbnail.",
+        "object_repr": "Kaya",
+        "object_id": "7",
+        "action_time": "2015-12-01T20:29:25.800Z",
+        "content_type": 7,
+        "user": 1
+    },
+    "model": "admin.logentry",
+    "pk": 41
+}]

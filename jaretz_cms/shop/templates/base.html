@@ -45,9 +45,15 @@
                   <div class="col1 me-one">
                     <h4>{{category.name}}</h4>
                     <ul>
-                      {% for cat in category.subcategories %}
-                      <li><a href="{% url 'index' %}">{{cat.name}}</a></li>
-                      {% endfor %}
+                      {% if category.subcategories.all %}
+                        {% for cat in category.subcategories %}
+                        <li><a href="{% url 'category' cat.slug cat.id %}">{{cat.name}}</a></li>
+                        {% endfor %}
+                      {% else %}
+                        {% for item in category.items.all %}
+                        <li><a href="{% url 'item' item.slug item.id %}">{{item.name}}</a></li>
+                        {% endfor %}
+                      {% endif %}
                     </ul>
                   </div>
                   {% endfor %}
@@ -106,10 +112,9 @@
          <div class="col-md-3 ftr-grid">
             <h3>Categorías</h3>
             <ul class="nav-bottom">
-              <li><a href="{% url 'category' categories.all.0.slug categories.all.0.id %}">{{categories.all.0.name}}</a></li>
-              <li><a href="{% url 'category' categories.all.1.slug categories.all.1.id %}">{{categories.all.1.name}}</a></li>
-              <li><a href="{% url 'category' categories.all.2.slug categories.all.2.id %}">{{categories.all.2.name}}</a></li>
-              <li><a href="{% url 'category' categories.all.3.slug categories.all.3.id %}">{{categories.all.3.name}}</a></li>
+            {% for category in categories %}
+              <li><a href="{% url 'category' category.slug category.id %}">{{category.name}}</a></li>
+            {% endfor %}
               <li><a href="{% url 'categories' %}">...Más</a></li> 
             </ul>         
          </div>
