@@ -57,7 +57,6 @@ testem.log
 .DS_Store
 .travis.yml
 tmp/
-media
 0020_data.py
 
 # Fixture generated data
