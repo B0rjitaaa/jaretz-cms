@@ -43,26 +43,26 @@
 {% endblock banners %}
 
 {% block main %}
-	<div class="items">
-     <div class="container">
-       <div class="items-sec">
-         {% for item in recent_items %}
-           <div class="col-md-3 feature-grid" style="margin-bottom:15px">
-             <a href="{% url 'item' item.slug item.id %}">
-              <div>
-             <img src="/media/{{item.image}}" style="height:250px; width: 225px" alt=""/> 
-             </div>
-               <div class="arrival-info" style="text-align:center; margin-top:10px">
-                 <h4>{{item.category}}</h4>
-                 <p>{{item.name}}</p>
-                 <p style="color:green">{{item.price}}€</p>
+  <div class="items">
+    <div class="container">
+        <div class="items-sec">
+          {% for item in recent_items %}
+              <div class="col-md-3 feature-grid" style="margin-bottom:15px">
+               <a href="{% url 'item' item.slug item.id %}">
+                <div style="height:250px" >
+               <img src="/media/{{item.image}}" alt=""/> 
                </div>
-               <div class="viw" style="text-align:center">
-                <a href="{% url 'item' item.slug item.id %}"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>Detalles</a>
-               </div>
-              </a>
-           </div>
-         {% endfor %}
+                 <div class="arrival-info" style="text-align:center; margin-top:10px">
+                   <h4>{{item.category}}</h4>
+                   <p>{{item.name}}</p>
+                   <p style="color:green">{{item.price}}€</p>
+                 </div>
+                 <div class="viw" style="text-align:center">
+                  <a href="{% url 'item' item.slug item.id %}" <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>Detalles</a>
+                 </div>
+                </a>
+            </div>
+          {% endfor %}
          <div class="clearfix"></div>
        </div>
      </div>
