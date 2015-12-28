@@ -1,0 +1,15 @@
+[{
+    "fields": {
+        "name": "test",
+        "image": "images/banners/c76302568e874c6394e67820a79aec1d.jpg"
+    },
+    "pk": 1,
+    "model": "shop.banner"
+}, {
+    "fields": {
+        "name": "new",
+        "image": "images/banners/98c65a5d9a90410d9a07571b63f744b5.jpg"
+    },
+    "pk": 2,
+    "model": "shop.banner"
+}]

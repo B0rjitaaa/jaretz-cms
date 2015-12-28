@@ -1,0 +1,49 @@
+[{
+    "model": "shop.category",
+    "fields": {
+        "header_image": "images/categories/3dacd2e08681445d87c0cf6ad4d4f2d3.jpg",
+        "slug": "cachimbas",
+        "meta_tag": "",
+        "name": "Cachimbas",
+        "thumbnail": "images/categories/a3814fb578c14521a7944837cbfea5bd.jpg",
+        "parent_category": null,
+        "description": "xxx"
+    },
+    "pk": 1
+}, {
+    "model": "shop.category",
+    "fields": {
+        "header_image": "",
+        "slug": "dud",
+        "meta_tag": "",
+        "name": "Dud",
+        "thumbnail": "images/categories/3e0c62d71ee349e9821bbc9fe1a72841.png",
+        "parent_category": 1,
+        "description": "xxx"
+    },
+    "pk": 2
+}, {
+    "model": "shop.category",
+    "fields": {
+        "header_image": "",
+        "slug": "kaya",
+        "meta_tag": "",
+        "name": "Kaya",
+        "thumbnail": "images/categories/3b74b4e1c31a4e5dbe85aac0c22acac7.jpg",
+        "parent_category": 1,
+        "description": "xxx"
+    },
+    "pk": 3
+}, {
+    "model": "shop.category",
+    "fields": {
+        "header_image": "",
+        "slug": "carbones",
+        "meta_tag": "",
+        "name": "Carbones",
+        "thumbnail": "images/categories/7af9ad3bcb354ae0add3e3d7b23ac008.png",
+        "parent_category": null,
+        "description": "xxx"
+    },
+    "pk": 4
+}]

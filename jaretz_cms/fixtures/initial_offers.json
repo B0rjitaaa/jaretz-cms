@@ -1,0 +1,25 @@
+[{
+    "model": "shop.offer",
+    "pk": 1,
+    "fields": {
+        "item": 1
+    }
+}, {
+    "model": "shop.offer",
+    "pk": 2,
+    "fields": {
+        "item": 2
+    }
+}, {
+    "model": "shop.offer",
+    "pk": 3,
+    "fields": {
+        "item": 3
+    }
+}, {
+    "model": "shop.offer",
+    "pk": 4,
+    "fields": {
+        "item": 4
+    }
+}]

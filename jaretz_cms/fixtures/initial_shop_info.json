@@ -1,0 +1,18 @@
+[{
+    "pk": 1,
+    "fields": {
+        "slogan": "El mejor estanco de Sevilla",
+        "zip_code": "41010",
+        "email": "info@estanco123.es",
+        "phone": "xxxx",
+        "city": "Sevilla",
+        "return_policy": "xxx",
+        "tax_number": "xxx",
+        "address": "Avd Eduardo Dato, 57",
+        "country": "Espa\u00f1a",
+        "town_ship": "Sevilla",
+        "terms_use_privacy": "xxx",
+        "name": "Estanco 123"
+    },
+    "model": "shop.shop"
+}]

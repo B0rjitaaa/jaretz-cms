@@ -1,0 +1,137 @@
+[{
+    "model": "shop.item",
+    "fields": {
+        "image": "images/items/e3b3e08fa04845dca087975157c94851.jpg",
+        "slug": "kaya-mix",
+        "name": "Kaya Mix",
+        "shown_times": 0,
+        "times_sold": 0,
+        "upload_date": "2015-12-26",
+        "reference_code": "code_1",
+        "visible": true,
+        "starred": false,
+        "wholesale_price": "10",
+        "price": "100",
+        "category": 3
+    },
+    "pk": 1
+}, {
+    "model": "shop.item",
+    "fields": {
+        "image": "images/items/4e52b523d8f34cd898cab8dc8cf89cbd.jpg",
+        "slug": "kaya-q7",
+        "name": "Kaya Q7",
+        "shown_times": 0,
+        "times_sold": 0,
+        "upload_date": "2015-12-26",
+        "reference_code": "code__",
+        "visible": true,
+        "starred": false,
+        "wholesale_price": "19",
+        "price": "200",
+        "category": 3
+    },
+    "pk": 2
+}, {
+    "model": "shop.item",
+    "fields": {
+        "image": "images/items/cd4e660f8f5d4efb9635da386a64bb31.jpg",
+        "slug": "dud-50",
+        "name": "Dud 5.0",
+        "shown_times": 0,
+        "times_sold": 0,
+        "upload_date": "2015-12-26",
+        "reference_code": "Code_3",
+        "visible": true,
+        "starred": false,
+        "wholesale_price": "19",
+        "price": "122",
+        "category": 2
+    },
+    "pk": 3
+}, {
+    "model": "shop.item",
+    "fields": {
+        "image": "images/items/d5c73f5d1ede4a34875901b38b4f8ef0.jpg",
+        "slug": "dud-new",
+        "name": "Dud new",
+        "shown_times": 0,
+        "times_sold": 0,
+        "upload_date": "2015-12-26",
+        "reference_code": "Code_4",
+        "visible": true,
+        "starred": false,
+        "wholesale_price": "8",
+        "price": "88",
+        "category": 2
+    },
+    "pk": 4
+}, {
+    "model": "shop.item",
+    "fields": {
+        "image": "images/items/ade5b520ed214969bbd207e0cbf0b2e6.png",
+        "slug": "cocobuzz",
+        "name": "Cocobuzz",
+        "shown_times": 0,
+        "times_sold": 0,
+        "upload_date": "2015-12-28",
+        "reference_code": "code_55",
+        "visible": true,
+        "starred": false,
+        "wholesale_price": "5",
+        "price": "7.95",
+        "category": 4
+    },
+    "pk": 6
+}, {
+    "model": "shop.item",
+    "fields": {
+        "image": "images/items/5519f6a115f74d93b5deb4fa0c8a7b4b.jpg",
+        "slug": "tom-cococha",
+        "name": "Tom Cococha",
+        "shown_times": 0,
+        "times_sold": 0,
+        "upload_date": "2015-12-28",
+        "reference_code": "code_tom",
+        "visible": true,
+        "starred": false,
+        "wholesale_price": "2",
+        "price": "3",
+        "category": 4
+    },
+    "pk": 7
+}, {
+    "model": "shop.item",
+    "fields": {
+        "image": "images/items/b9b207fcb5fb429f8685d750d92c5926.jpg",
+        "slug": "tomcocoha-flat",
+        "name": "Tomcocoha Flat",
+        "shown_times": 0,
+        "times_sold": 0,
+        "upload_date": "2015-12-28",
+        "reference_code": "code_tom_flat",
+        "visible": true,
+        "starred": false,
+        "wholesale_price": "2",
+        "price": "4",
+        "category": 4
+    },
+    "pk": 8
+}, {
+    "model": "shop.item",
+    "fields": {
+        "image": "images/items/3241a3e87e334101845651b660064270.jpg",
+        "slug": "cocolite",
+        "name": "CocoLite",
+        "shown_times": 0,
+        "times_sold": 0,
+        "upload_date": "2015-12-28",
+        "reference_code": "code_coco_lite",
+        "visible": true,
+        "starred": false,
+        "wholesale_price": "0.5",
+        "price": "3.5",
+        "category": 4
+    },
+    "pk": 9
+}]
